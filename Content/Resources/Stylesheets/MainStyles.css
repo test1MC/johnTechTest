@@ -1,0 +1,673 @@
+﻿/*<meta />*/
+
+@import url('../hovermap/hovermapHotspots.css');
+
+@import url('../hovermap/hovermapCore.css');
+
+@import url('../qtip2/jquery.qtip.css');
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*===========================================================================================================================================================
+
+Hello! If this is your first time looking at a stylesheet within the text editor view, what you are reading right now is a "comment". Comments are added throughout this stylesheet with the purpose of making the source code easier to understand, comments will not be interpreted during the compile process. Since comments are not interpreted during the compile process, feel free to add or remove any comments.
+
+For help with MadCap Flare go to Help Ribbon > Topics Section > Open Help. Alternatively visit the Flare Online Help at help.madcapsoftware.com
+
+If you have any questions regarding how to work with this stylesheet or template project, please contact MadCap Technical Support. 
+https://www.madcapsoftware.com/support/contact-options.aspx
+
+NOTE: Generally, this stylesheet has elements listed out in the order that they appear in the topic from top to bottom. The exception are General styles which are at the top and the stylesheet mediums which are at the bottom.
+
+EXAMPLE: Since the search-bar is at the top of the topic page, it will be listed closer to the top of this stylesheet.
+
+===========================================================================================================================================================*/
+
+/*==Topic General Styles==*/
+
+body
+{
+	font-family: Calibri;
+	font-size: 12pt;
+	line-height: 14pt;
+	background-color: #ffffff;
+}
+
+h1
+{
+	margin-bottom: 18px;
+	margin-top: 0px;
+	color: #022137;
+	font-family: 'Century Gothic';
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+h2
+{
+	margin-bottom: 8px;
+	margin-top: 10px;
+	font-size: 18pt;
+	color: #651f5c;
+	font-weight: bold;
+	font-family: 'Century Gothic';
+}
+
+h3
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	color: #022137;
+	font-family: Calibri;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+h4
+{
+	
+}
+
+li
+{
+	font-family: Calibri;
+	font-size: inherit;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+p
+{
+	font-size: 12pt;
+	line-height: 14pt;
+	color: #000000;
+	font-family: Calibri;
+	margin-bottom: 8px;
+	margin-top: 0pt;
+}
+
+img	/*Setting max-width: 100%; property makes images always fit the width of the container*/
+{
+	max-width: 100%;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+img.thumbnail
+{
+	mc-thumbnail: popup;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+a.MCBreadcrumbsLink
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #022137;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #000000;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-size: 10pt;
+	font-family: Calibri;
+}
+
+MadCap|xref
+{
+	color: #2D8DCC;
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+}
+
+MadCap|xref:hover
+{
+	color: inherit;
+}
+
+MadCap|dropDownHotspot
+{
+	font-size: inherit;
+	font-weight: inherit;
+	margin-bottom: 12px;
+	text-decoration: none;
+}
+
+.purple-header
+{
+	font-size: 18pt !important;
+	font-weight: bold !important;
+	font-family: 'Century Gothic' !important;
+	margin-bottom: 12px !important;
+	color: #651f5c !important;
+	text-decoration: none !important;
+}
+
+.blue-header
+{
+	font-size: 14pt !important;
+	font-weight: bold !important;
+	font-family: 'Century Gothic' !important;
+	margin-bottom: 12px !important;
+	color: #018eb2 !important;
+	text-decoration: none !important;
+}
+
+MadCap|dropDownBody
+{
+	border-bottom: 1px solid #d3d3d3;
+	font-family: 'Century Gothic, Helvetica Neue, Arial';
+	color: #022137;
+	margin-bottom: 8px;
+}
+
+/*MadCap|dropDown	/*Change the "mc-open-image" and "mc-closed-image" properties to change the icons used in drop-downs
+{
+	font: inherit;
+	margin-bottom: 8px;
+	background-position: left;
+	background-size: 28px 28px;
+	padding-left: 25px;
+	padding-right: 0px;
+	font-size: inherit;
+	mc-open-image: url('../Images/Assets/Icons/MainIcons/down.png');
+	mc-closed-image: url('../Images/Assets/Icons/MainIcons/up.png');
+}*/
+
+.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('../Images/Assets/Icons/MainIcons/up.png');
+	background-size: 22px 22px;
+	padding-left: 23px;
+	padding-right: 0;
+	padding-top: 11px;
+	padding-bottom: 6px;
+}
+
+.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('../Images/Assets/Icons/MainIcons/down.png');
+	background-size: 22px 22px;
+	padding-left: 23px;
+	padding-right: 0;
+	padding-top: 11px;
+	padding-bottom: 6px;
+}
+
+/*==Master Page Topic Layout==*/
+
+nav.title-bar	/*Adds bottom border on top navigation bar*/
+{
+	border-bottom: 1px solid #d3d3d3;
+}
+
+div.top-bar	/*Contains the breadcrumbs and toolbar*/
+{
+	min-height: 50px;
+	/*Min-height is necessary for topics that are not included in a TOC*/
+}
+
+div.search-container
+{
+	float: right;
+	max-width: 25%;
+}
+
+/*==Elements for the left side of Master Page layout==*/
+
+div.side-menu	/*This is the div that the menu proxy is contained in*/
+{
+	padding-left: 10px;
+	/*	margin-top: 15px;*/
+}
+
+/*Styles that provide the border radius to the menu proxy items*/
+
+ul.menu._Skins_SideMenu.mc-component li > a.selected
+{
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border-radius: 5px;
+	color: inherit;
+}
+
+ul.menu._Skins_SideMenu.mc-component li > a:hover
+{
+	border-radius: 5px;
+	background-color: #022137;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul > li > a:hover
+{
+	border-radius: 5px;
+	background-color: #022137;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul > li > a:hover
+{
+	border-radius: 5px;
+	background-color: #022137;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a:hover
+{
+	border-radius: 5px;
+	background-color: #022137;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a:hover
+{
+	border-radius: 5px;
+	background-color: #022137;
+}
+
+div.topic-layout	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: 12.5%;
+	width: 75%;
+}
+
+div.topic-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic-layout > div
+{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: inherit;
+}
+
+div.topic-layout > div:nth-child(1)	/*Menu Proxy container*/
+{
+	margin-left: 0%;
+}
+
+div.topic-layout > div:nth-child(2)
+{
+	width: 73%;
+	margin-left: 2%;
+}
+
+a
+{
+	color: inherit;
+}
+
+ul._Skins_SideMenu
+{
+	font-family: Calibri;
+}
+
+table
+{
+	color: #000000;
+	font-family: Calibri;
+}
+
+div::after
+{
+	
+}
+
+div::before
+{
+	
+}
+
+div:nth-child(1)
+{
+	
+}
+
+div:nth-child(2)
+{
+	
+}
+
+/*b
+{
+	margin-top: inherit;
+	margin-bottom: 8pt;
+}
+
+i
+{
+	margin-bottom: 8pt;
+}
+
+span
+{
+	margin-bottom: 8pt;
+}*/
+
+span.SearchHighlight7
+{
+	margin-bottom: inherit;
+}
+
+tbody
+{
+	margin-bottom: 0pt;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media only screen and (max-width: 1279px)
+{
+	.row.nav-search
+	{
+		display: block;
+	}
+
+	div.search-container
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 98%;
+		margin-left: 2%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	div.top-bar
+	{
+		min-height: 0;
+	}
+
+	.row.nav-search
+	{
+		display: block;
+	}
+
+	div.search-container
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 98%;
+		margin-left: 2%;
+	}
+}
+
+p.PopupText
+{
+	font-size: 12pt;
+	line-height: 14pt;
+	font-family: Calibri;
+	color: #022137;
+	background-color: #f9e0ab;
+	margin-bottom: 8px;
+}
+
+p.Tip
+{
+	font-size: 10pt;
+	line-height: 12pt;
+	margin-left: 25pt;
+	text-indent: -25pt;
+	margin-top: 8px;
+}
+
+p.Note
+{
+	font-size: 10pt;
+	line-height: 12pt;
+	margin-left: 28pt;
+	text-indent: -28pt;
+	margin-top: 8px;
+}
+
+b.Tableheader
+{
+	font-family: 'Century Gothic';
+	color: #022137;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+li.NumberedList
+{
+	mc-auto-number-offset: 19pt;
+	text-indent: 0pt;
+	margin-left: 0pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-format: '{n+}.   ';
+}
+
+p.NoteIndent
+{
+	color: #000000;
+	font-family: Calibri;
+	line-height: 12pt;
+	font-size: 10pt;
+	margin-left: 45pt;
+	text-indent: -26pt;
+	margin-top: 8px;
+}
+
+p.TipIndent
+{
+	color: #000000;
+	font-family: Calibri;
+	line-height: 12pt;
+	font-size: 10pt;
+	margin-left: 37pt;
+	text-indent: -19pt;
+	margin-top: 8px;
+}
+
+li.NumberedList_Restart_1
+{
+	list-style-type: inherit;
+	display: block;
+	mc-auto-number-offset: 19pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-format: '{n=1}.   ';
+	margin-left: 0pt;
+	margin-top: 8px;
+}
+
+p.NumberedList_Restart_1
+{
+	list-style-type: inherit;
+	display: block;
+	mc-auto-number-offset: 19pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-format: '{n=1}.   ';
+	margin-left: 0pt;
+	margin-top: 8px;
+}
+
+p.NumberedList
+{
+	mc-auto-number-offset: 19pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-format: '{n+}.   ';
+	margin-top: 8px;
+	text-indent: 0px;
+	margin-left: 0px;
+}
+
+p.NumberedList_Indent_NoNumber
+{
+	mc-auto-number-position: inside-head;
+	margin-left: 19pt;
+	mc-auto-number-format: '{ } ';
+	list-style-type: none;
+	margin-top: 8px;
+}
+
+p.NumberedList_Alpha_first
+{
+	mc-auto-number-offset: 19pt;
+	text-indent: 0pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: outside-head;
+	margin-top: 8px;
+	margin-left: 39pt;
+	mc-auto-number-format: '{ }{A=1}.  ';
+}
+
+p.NumberedList_Alpha
+{
+	mc-auto-number-offset: 19pt;
+	text-indent: 0pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: outside-head;
+	margin-left: 39pt;
+	mc-auto-number-format: '{ }{A+}.  ';
+	margin-top: 8px;
+}
+
+p.NumberedList_Restart_1,
+p.NumberedList,
+p.NumberedList_Alpha_first,
+p.NumberedList_Alpha
+{
+	display: list-item;
+	list-style-position: inside;
+}
+
+td.Numbered_List_first
+{
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 19pt;
+	mc-auto-number-format: '{n=1}.  ';
+}
+
+td.Numbered_List
+{
+	mc-auto-number-offset: 197pt;
+	mc-auto-number-position: outside-head;
+	mc-auto-number-format: '{n+}.  ';
+}
+
+td.Numbered_List_Indent_NoNumber
+{
+	mc-auto-number-format: '{ }';
+	mc-auto-number-offset: 0pt;
+	mc-auto-number-position: inside-head;
+	margin-left: 29pt;
+}
+
+p.NumberedList_Alpha_Indent
+{
+	text-indent: 0pt;
+	padding-left: 0pt;
+	left: 0pt;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-offset: 0pt;
+	mc-auto-number-format: '{ }{ }';
+	margin-left: 42pt;
+}
+
+p.Shade_cell
+{
+	font-size: 12pt;
+	line-height: 14pt;
+	color: #000000;
+	font-family: Calibri;
+	background-color: #77d2e9;
+	border: solid 2px #022137;
+	border-bottom-width: 2pt;
+}
+
+MadCap|dropDownHotspot#H2
+{
+	font-size: 18pt;
+	font-weight: bold;
+	color: #651f5c;
+	font-family: 'Century Gothic';
+}
+
+MadCap|dropDownHotspot.dropDownHotSpot_H2
+{
+	color: #651f5c;
+	font-family: 'Century Gothic';
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+p.NumberedList_Restart_1 img,
+p.NumberedList img
+{
+	vertical-align: bottom;
+}
+
+table.TableStyle-Steps_inside img
+{
+	vertical-align: bottom;
+}
+
+td.AutoNumber_p_NumberedList_Restart_1,
+td.AutoNumber_p_NumberedList
+{
+	vertical-align: baseline;
+}
+
+table.AutoNumber_p_NumberedList
+{
+	margin-bottom: 0;
+}
+

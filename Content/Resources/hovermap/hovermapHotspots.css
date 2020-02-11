@@ -1,0 +1,815 @@
+﻿﻿/*<meta />*/
+
+p.MyStyle
+{
+	font-family: Calibri;
+	font-size: 10pt;
+	margin: 0pt;
+}
+
+img.mapImage
+{
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+a.Popup
+{
+	}
+
+/* These rules are for <CURVE COMPARISON> */
+
+.hoverMap#CurveComparison .mapLink {border: 2px solid #018EB2;}
+.hoverMap#CurveComparison .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#CurveComparison:hover .mapLink {border: 2px solid #018EB2;}
+
+#CurveComparison_1 { width: 11%; height: 6.5%; top: 17.5%; left: 18.2%; }
+#CurveComparison_2 { width: 9.8%; height: 6.5%; top: 17.5%; left: 29.2%; }
+#CurveComparison_3 { width: 10%; height: 6.5%; top: 17.5%; left: 39%; }
+#CurveComparison_4 { width: 7%; height: 6%; top: 6%; left: 93%; }
+#CurveComparison_5 { width: 10.2%; height: 6.5%; top: 17.5%; left: 49%; }
+#CurveComparison_6 { width: 12.5%; height: 9%; top: 17.5%; left: 86%; }
+#CurveComparison_7 { width: 13.5%; height: 40.5%; top: 33%; left: 83%; }
+#CurveComparison_8 { width: 10.2%; height: 6.5%; top: 17.5%; left: 59%; }
+#CurveComparison_9 { width: 10%; height: 6.5%; top: 17.5%; left: 69.2%; }
+#CurveComparison_10 { width: 11%; height: 6.5%; top: 23.8%; left: 18.2%; }
+#CurveComparison_11 { width: 9.8%; height: 6.5%; top: 23.8%; left: 29.2%; }
+#CurveComparison_12 { width: 48%; height: 52%; top: 38%; left: 30%; }
+#CurveComparison_13 { width: 7%; height: 6%; top: 6%; left: 72%; }
+
+ /* These rules are for <CURVE COMPARISON TWO CHARTS> */
+
+.hoverMap#CurrveComp_2Charts .mapLink {border: 2px solid #018eb2;}
+.hoverMap#CurrveComp_2Charts .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#CurrveComp_2Charts:hover .mapLink {border: 2px solid #018eb2;}
+
+#CurrveComp_2Charts_1 { width: 13%; height: 18%; top: 2.5%; left: 0.1%; }
+#CurrveComp_2Charts_2 { width: 2.2%; height: 20%; top: 2%; left: 16%; }
+#CurrveComp_2Charts_3 { width: 8%; height: 10.5%; top: 11.5%; left: 18.5%; }
+#CurrveComp_2Charts_4 { width: 8.7%; height: 12%; top: 21%; left: 72%; }
+#CurrveComp_2Charts_5 { width: 16.4%; height: 14.5%; top: 50%; left: 71.2%; }
+
+/* These rules are for <SET MY STRATEGY> */
+
+.hoverMap#Set_MY_Strategy_1 .mapLink {border: 2px solid #018Eb2;}
+.hoverMap#Set_MY_Strategy_1 .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#Set_MY_Strategy_1:hover .mapLink {border: 2px solid #018Eb2;}
+
+#Set_MY_Strategy_1_1 { width: 24%; height: 40%;  top: 12%;   left: 0%; }
+#Set_MY_Strategy_1_2 { width: 3%; height: 25%; top: 38%; left: 27%; }
+#Set_MY_Strategy_1_3 { width: 5%; height: 26%; top: 40%; left: 67%; }
+#Set_MY_Strategy_1_4 { width: 25%; height: 10%; top: 28%; left: 26%; }
+#Set_MY_Strategy_1_5 { width: 38%; height: 8.5%; top: 28.5%; left: 60%; }
+#Set_MY_Strategy_1_6 { width: 16%; height: 10%; top: 69.5%; left: 83%; }
+#Set_MY_Strategy_1_7 { width: 13%; height:8%; top: 84%; left: 38%; }
+#Set_MY_Strategy_1_8 { width: 10%; height: 9%; top: 83%; left: 74%; }
+#Set_MY_Strategy_1_9 { width: 13%; height: 7%; top: 1%; left: 83.5%; }
+
+/* These rules are for <SCENARIO MANAGER> */
+
+.hoverMap#ScnearioManager .mapLink {border: 2px solid #018EB2;}
+.hoverMap#ScnearioManager .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#ScnearioManager:hover .mapLink {border: 2px solid #018EB2;}
+
+#ScnearioManager_1 { width: 13.5%; height: 6.6%; top: 6.6%; left: 83.8%; }
+#ScnearioManager_2 { width: 16%; height: 4.5%; top: 24.3%; left: 2%; }
+#ScnearioManager_3 { width: 18%; height: 5%; top: 24.5%; left: 25%; }
+#ScnearioManager_4 { width: 15.2%; height: 7%; top: 22.3%; left: 82%;}
+#ScnearioManager_5 { width: 10.5%; height: 5.8%; top: 43.7%; left: 87.3%; }
+#ScnearioManager_6 { width: 5%; height: 3%; top: 49.8%; left: 92%; }
+#ScnearioManager_7 { width: 23%; height: 6.5%; top: 69%; left: 4%; }
+#ScnearioManager_8 { width: 16%; height: 5.6%; top: 43%; left: 47%; }
+#ScnearioManager_9 { width: 8%; height: 5%; top: 30.2%; left: 73%; }
+#ScnearioManager_10 { width: 7%; height: 6.2%; top: 69%; left: 89.3%; }
+
+ /* These rules are for <SET RATE ENVIRON> */
+
+.hoverMap#SetRateEnvironScreen .mapLink {border: 2px solid #018Eb2;}
+.hoverMap#SetRateEnvironScreen .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#SetRateEnvironScreen:hover .mapLink {border: 2px solid #018Eb2;}
+
+#SetRateEnvironScreen_1 { width: 25%; height: 75%; top: 14%; left: 0%; }
+#SetRateEnvironScreen_2 { width: 4%; height: 23%; top: 45%; left: 28%; }
+#SetRateEnvironScreen_3 { width: 4%; height: 22%; top: 46%; left: 91%; }
+#SetRateEnvironScreen_4 { width: 12.5%; height: 10%; top: 80.5%; left: 39.8%; }
+#SetRateEnvironScreen_5 { width: 10%; height: 10%; top: 80.5%; left: 76.5%; }
+#SetRateEnvironScreen_6 { width: 5.2%; height: 7%; top: 1.8%; left: 94.5%; }
+
+ /* These rules are for <SET ADJUSTMENT RULES> */
+
+.hoverMap#SetAdjustmentRules_hover .mapLink {border: 2px solid #018Eb2;}
+.hoverMap#SetAdjustmentRules_hover .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#SetAdjustmentRules_hover:hover .mapLink {border: 2px solid #018Eb2;}
+
+#SetAdjustmentRules_hover_1 { width: 6%; height: 30%; top: 42%; left: 3%; }
+#SetAdjustmentRules_hover_2 { width: 38%; height: 9.5%; top: 33%; left: 60%; }
+#SetAdjustmentRules_hover_3 { width: 4%; height: 24%; top: 44%; left: 59%; }
+#SetAdjustmentRules_hover_4 { width: 12.5%; height: 25%; top: 44%; left: 82%; }
+#SetAdjustmentRules_hover_5 { width: 13%; height: 10%; top: 80%; left: 21%; }
+#SetAdjustmentRules_hover_6 { width: 11.5%; height: 10%; top: 80%; left: 68%; }
+#SetAdjustmentRules_hover_7 { width: 13.5%; height: 10%; top: 0.3%; left: 86.5%; }
+
+ /* These rules are for <SUMMARY METRICS CDA DASHBOARD> */
+
+.hoverMap#SummaryMetricsDash .mapLink {border: 2px solid #018eb2;}
+.hoverMap#SummaryMetricsDash .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#SummaryMetricsDash:hover .mapLink {border: 2px solid #018eb2;}
+
+#SummaryMetricsDash_1 {	width: 13.8%; height: 59%; top: 8%; left: 1%; }
+#SummaryMetricsDash_2 {	width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+#SummaryMetricsDash_4 { width: 17%; height: 4%; top: 17.5%; left: 21%; }
+#SummaryMetricsDash_5 { width: 28%; height: 87%; top: 10%; left: 71.5%; }
+
+ /* These rules are for <GROWTH AND RATES DASHBOARD> */
+
+.hoverMap#GrowthandRatesDash .mapLink {border: 2px solid #018eb2;}
+.hoverMap#GrowthandRatesDash .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#GrowthandRatesDash:hover .mapLink {border: 2px solid #018eb2;}
+
+#GrowthandRatesDash_1 { width: 14.5%; height: 69%; top: 7.5%; left: 0.7%; }
+#GrowthandRatesDash_2 {	width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+#GrowthandRatesDash_3 { width: 22%; height: 7%; top: 9%; left: 25%; }
+#GrowthandRatesDash_4 { width: 22%; height: 7%; top: 9%; left: 66%; }
+#GrowthandRatesDash_6 { width: 42.5%; height: 12.5%; top: 41%; left: 45%; }
+#GrowthandRatesDash_7 { width: 29.5%; height: 80%; top: 16%; left: 15.2%; }
+
+ /* These rules are for <CDA Portfolio Makeup dashboard> */
+
+.hoverMap#CDAPortfolioMakeup .mapLink {border: 2px solid #018eb2;}
+.hoverMap#CDAPortfolioMakeup .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#CDAPortfolioMakeup:hover .mapLink {border: 2px solid #018eb2;}
+
+#CDAPortfolioMakeup_1 { width: 14.5%; height: 51.5%; top: 7%; left: 0.5%; }
+#CDAPortfolioMakeup_2 { width: 14.5%; height: 12%; top: 58.5%; left: 0.5%; }
+#CDAPortfolioMakeup_3 { width: 20%; height: 8%; top: 13%; left: 29%; }
+#CDAPortfolioMakeup_4 { width: 19%; height: 8%; top: 13%; left: 69%; }
+#CDAPortfolioMakeup_5 { width: 23%; height: 21%; top: 24%; left: 68%; }
+#CDAPortfolioMakeup_6 { width: 2%; height: 70%; top: 22%; left: 15%; }
+#CDAPortfolioMakeup_7 {	width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+
+ /* These rules are for <CDA Rate Disperion Dashboard> */
+
+.hoverMap#RateDispersion .mapLink {border: 2px solid #018eb2;}
+.hoverMap#RateDispersion .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#RateDispersion:hover .mapLink {border: 2px solid #018eb2;}
+
+#RateDispersion_1 { width: 13%; height: 43%; top: 7.5%; left: 0.5%; }
+#RateDispersion_2 { width: 13%; height: 11%; top: 51%; left: 0.5%; }
+#RateDispersion_3 { width: 13%; height: 9%; top: 7%; left: 28%; }
+#RateDispersion_4 { width: 16%; height: 9%; top: 7%; left: 69%; }
+#RateDispersion_5 { width: 34.8%; height: 38%; top: 16%; left: 19.3%; }
+#RateDispersion_6 { width: 34%; height: 43%; top: 55%; left: 19%; }
+#RateDispersion_7 { width: 34%; height: 43%; top: 55%; left: 62.5%; }
+#RateDispersion_8 { width: 7%; height: 6.5%; top: 0.1%; left: 71%; }
+
+ /* These rules are for <Vintage Data Months Out dashboard> */
+
+.hoverMap#VintageDataMonthsOut .mapLink {border: 2px solid #018eb2;}
+.hoverMap#VintageDataMonthsOut .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#VintageDataMonthsOut:hover .mapLink {border: 2px solid #018eb2;}
+
+#VintageDataMonthsOut_1 { width: 13.5%; height: 34%; top: 7.5%; left: 0.8%; }
+#VintageDataMonthsOut_2 { width: 13.5%; height: 12.5%; top: 42%; left: 0.8%; }
+#VintageDataMonthsOut_3 { width: 39%; height: 8%; top: 46.8%; left: 18%; }
+#VintageDataMonthsOut_4 { width: 39%; height: 23.5%; top: 15%; left: 18%; }
+#VintageDataMonthsOut_5 { width: 36%; height: 14%; top: 71%; left: 20%; }
+#VintageDataMonthsOut_6 { width: 37%; height: 45%; top: 54%; left: 62%; }
+#VintageDataMonthsOut_7 { width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+
+ /* These rules are for <Vintage Data by Months> */
+
+.hoverMap#VintageDatabyMonths .mapLink {border: 2px solid #018eb2;}
+.hoverMap#VintageDatabyMonths .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#VintageDatabyMonths:hover .mapLink {border: 2px solid #018eb2;}
+
+#VintageDatabyMonths_1 { width: 13.5%; height: 34%; top: 7.5%; left: 0.8%; }
+#VintageDatabyMonths_2 { width: 13.5%; height: 12%; top: 42%; left: 0.8%; }
+#VintageDatabyMonths_3 { width: 44%; height: 13%; top: 20.5%; left: 28.5%; }
+#VintageDatabyMonths_4 { width: 41%; height: 8%; top: 46.8%; left: 16%; }
+#VintageDatabyMonths_5 { width: 36%; height: 28%; top: 59%; left: 20%; }
+#VintageDatabyMonths_6 { width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+
+ /* These rules are for <Portfolio by Vintage dashboard> */
+
+.hoverMap#PortfoliobyVintage .mapLink {border: 2px solid #018eb2;}
+.hoverMap#PortfoliobyVintage .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#PortfoliobyVintage:hover .mapLink {border: 2px solid #018eb2;}
+
+#PortfoliobyVintage_1 { width: 15%; height: 26%; top: 7.5%; left: 0.5%; }
+#PortfoliobyVintage_2 { width: 18%; height: 18%; top: 18%; left: 27.5%; }
+#PortfoliobyVintage_3 { width: 30.5%; height: 28%; top: 36%; left: 45%; }
+#PortfoliobyVintage_4 { width: 7.5%; height: 73%; top: 14%; left: 15.5%; }
+
+ /* These rules are for <Balances by Account dashboard> */
+
+.hoverMap#BalancesbyAccount .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BalancesbyAccount .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BalancesbyAccount:hover .mapLink {border: 2px solid #018eb2;}
+
+#BalancesbyAccount_1 { width: 14%; height: 34%; top: 7.5%; left: 0.5%; }
+#BalancesbyAccount_2 { width: 14%; height: 11%; top: 42%; left: 0.5%; }
+#BalancesbyAccount_3 { width: 7%; height: 65%; top: 18%; left: 14.5%; }
+#BalancesbyAccount_4 { width: 20.5%; height: 8%; top: 18%; left: 21.5%; }
+#BalancesbyAccount_5 { width: 50%; height: 19%; top: 68%; left: 21%; }
+
+/* These rules are for <CD Maturity Schedule dashboard> */
+
+.hoverMap#CDMaturitySchedule .mapLink {border: 2px solid #018eb2;}
+.hoverMap#CDMaturitySchedule .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#CDMaturitySchedule:hover .mapLink {border: 2px solid #018eb2;}
+
+#CDMaturitySchedule_1 { width: 15%; height: 44%; top: 7%; left: 1%; }
+#CDMaturitySchedule_2 { width: 12%; height: 30%; top: 23%; left: 16%; }
+#CDMaturitySchedule_3 { width: 71%; height: 11%; top: 14%; left: 27.5%; }
+#CDMaturitySchedule_4 { width: 60%; height: 44%; top: 53%; left: 15.5%; }
+#CDMaturitySchedule_5 { width: 23%; height: 44%; top: 53%; left: 76%; }
+#CDMaturitySchedule_6 {	width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+
+/* These rules are for <CD Maturity Schedule dashboard2> */
+
+.hoverMap#CDMaturityDash2 .mapLink {border: 2px solid #018eb2;}
+.hoverMap#CDMaturityDash2 .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#CDMaturityDash2:hover .mapLink {border: 2px solid #018eb2;}
+
+#CDMaturityDash2_1 { width: 6%; height: 37%; top: 15%; left: 74%; }
+#CDMaturityDash2_2 { width: 38.5%; height: 12%; top: 79%; left: 29%; }
+#CDMaturityDash2_3 { width: 7%; height: 16%; top: 69%; left: 86%; }
+
+ /* These rules are for <Liquid mCOF Dashboard> */
+
+.hoverMap#LiquidMCOF .mapLink {border: 2px solid #018eb2;}
+.hoverMap#LiquidMCOF .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#LiquidMCOF:hover .mapLink {border: 2px solid #018eb2;}
+
+#LiquidMCOF_1 { width: 14%; height: 17%; top: 8%; left: 1%; }
+#LiquidMCOF_2 { width: 14%; height: 11%; top: 25.5%; left: 1%; }
+#LiquidMCOF_3 { width: 23%; height: 7%; top: 8.5%; left: 28%; }
+#LiquidMCOF_4 { width: 34%; height: 6%; top: 15%; left: 65%; }
+#LiquidMCOF_5 { width: 50%; height: 22%; top: 74%; left: 15%; }
+#LiquidMCOF_6 { width: 33%; height: 77%; top: 21.5%; left: 65%; }
+#LiquidMCOF_8 { width: 50%; height: 58%; top: 15%; left: 15%; }
+#LiquidMCOF_9 {	width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+#LiquidMCOF_10 { width: 14%; height: 9%; top: 37%; left: 1%; }
+
+
+ /* These rules are for <Regional Elasticity screen> */
+
+.hoverMap#RegionalEalsticity .mapLink {border: 2px solid #018eb2;}
+.hoverMap#RegionalEalsticity .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#RegionalEalsticity:hover .mapLink {border: 2px solid #018eb2;}
+
+#RegionalEalsticity_2 { width: 17%; height: 8%; top: 16%; left: 18%; }
+#RegionalEalsticity_3 { width: 9.5%; height: 6%; top: 16%; left: 70%; }
+#RegionalEalsticity_4 { width: 12%; height: 16%; top: 15%; left: 85%; }
+#RegionalEalsticity_5 { width: 17.5%; height: 27%; top: 44%; left: 68%; }
+#RegionalEalsticity_6 { width: 6%; height: 7%; top: 30%; left: 26%; }
+
+/* These rules are for <Scenario Output Dashboard> */
+
+.hoverMap#ScenarioOutputDash .mapLink {border: 2px solid #018eb2;}
+.hoverMap#ScenarioOutputDash .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#ScenarioOutputDash:hover .mapLink {border: 2px solid #018eb2;}
+
+#ScenarioOutputDash_1 { width: 19%; height: 16%; top: 5%; left: 2.4%; }
+#ScenarioOutputDash_2 { width: 2.5%; height: 29%; top: 11%; left: 0.1%; }
+#ScenarioOutputDash_3 { width: 33%; height: 11%; top: 31%; left: 67%; }
+#ScenarioOutputDash_4 { width: 89%; height: 46%; top: 49%; left: 4%; }
+
+ /* These rules are for <Scenario Output> */
+
+.hoverMap#ScenarioOutput .mapLink {border: 2px solid #018eb2;}
+.hoverMap#ScenarioOutput .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#ScenarioOutput:hover .mapLink {border: 2px solid #018eb2;}
+
+#ScenarioOutput_1 { width: 2%; height: 20%; top: 3%; left: 0.1%; }
+#ScenarioOutput_2 { width: 12%; height: 6%; top: 17%; left: 2%; }
+#ScenarioOutput_3 { width: 14%; height: 69%; top: 28%; left: 2%; }
+#ScenarioOutput_4 { width: 29%; height: 7%; top: 17%; left: 71%; }
+#ScenarioOutput_5 { width: 8.5%; height: 5%; top: 24%; left: 91%; }
+
+ /* These rules are for <OPTIMIZATION SET MY STRATEGY> */
+
+.hoverMap#OptSet_MY_Strategy_1 .mapLink {border: 2px solid #018Eb2;}
+.hoverMap#OptSet_MY_Strategy_1 .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#OptSet_MY_Strategy_1:hover .mapLink {border: 2px solid #018Eb2;}
+
+#OptSet_MY_Strategy_1_1 { width: 24%; height: 25%;  top: 13%;   left: 0%; }
+#OptSet_MY_Strategy_1_2 { width: 3.5%; height: 28%; top: 38%; left: 26.5%; }
+#OptSet_MY_Strategy_1_3 { width: 5%; height: 26%; top: 40%; left: 68.5%; }
+#OptSet_MY_Strategy_1_5 { width: 31.5%; height: 8.5%; top: 28.5%; left: 68%; }
+#OptSet_MY_Strategy_1_6 { width: 11%; height: 30%; top: 39%; left: 87%; }
+#OptSet_MY_Strategy_1_7 { width: 12%; height: 10%; top: 78%; left: 39%; }
+#OptSet_MY_Strategy_1_8 { width: 10%; height: 10%; top: 78%; left: 76%; }
+#OptSet_MY_Strategy_1_9 { width: 11.7%; height: 10%; top: 1%; left: 88%; }
+
+/* These rules are for <OPTIMIZATION REORDERING BOUNDS> */
+
+.hoverMap#ReoderingBounds .mapLink {border: 2px solid #018Eb2;}
+.hoverMap#ReoderingBounds .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#ReoderingBounds:hover .mapLink {border: 2px solid #018Eb2;}
+
+#ReorderingBounds_hover_1 { width: 24%; height: 40%;  top: 13%;   left: 0%; }
+#ReorderingBounds_hover_2 { width: 3.5%; height: 27%; top: 41%; left: 26.5%; }
+#ReorderingBounds_hover_3 { width: 5.5%; height: 26%; top: 40%; left: 68%; }
+#ReorderingBounds_hover_4 { width: 31.5%; height: 10%; top: 30%; left: 68%; }
+#ReorderingBounds_hover_5 { width: 18%; height: 10%; top: 31%; left: 28%; }
+#ReorderingBounds_hover_6 { width: 12%; height: 10.5%; top: 78%; left: 39%; }
+#ReorderingBounds_hover_7 { width: 10%; height: 10.5%; top: 78%; left: 76%; }
+#ReorderingBounds_hover_8 { width: 10.5%; height: 10%; top: 0%; left: 89%; }
+
+/* These rules are for <Optimization Output Dashboard> */
+
+.hoverMap#OptOutputDash .mapLink {border: 2px solid #018eb2;}
+.hoverMap#OptOutputDash .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#OptOutputDash:hover .mapLink {border: 2px solid #018eb2;}
+
+#OptOutputDash_1 { width: 20%; height: 18%; top: 6%; left: 2.4%; }
+#OptOutputDash_2 { width: 2.4%; height: 29%; top: 14%; left: 0%; }
+#OptOutputDash_3 { width: 13%; height: 10%; top: 37%; left: 41%; }
+#OptOutputDash_4 { width: 77%; height: 49%; top: 49%; left: 4%; }
+
+ /* These rules are for <Optimization Output> */
+
+.hoverMap#OptOutput .mapLink {border: 2px solid #018eb2;}
+.hoverMap#OptOutput .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#OptOutput:hover .mapLink {border: 2px solid #018eb2;}
+
+#OptOutput_1 { width: 2.4%; height: 18%; top: 9%; left: 0%; }
+#OptOutput_2 { width: 12%; height: 5%; top: 23%; left: 2.5%; }
+#OptOutput_3 { width: 18.5%; height: 66.5%; top: 33%; left: 3%; }
+#OptOutput_5 { width: 10.5%; height: 5%; top: 28%; left: 89%; }
+
+ /* These rules are for <Pricing Strategy Analtycis> */
+
+.hoverMap#PricingStratAnalytics .mapLink {border: 2px solid #018eb2;}
+.hoverMap#PricingStratAnalytics .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#PricingStratAnalytics:hover .mapLink {border: 2px solid #018eb2;}
+
+#PricingStratAnalytics_1 { width: 12.5%; height: 6%; top: 7%; left: 35%; }
+#PricingStratAnalytics_2 { width: 82%; height: 60%; top: 19%; left: 5%; }
+#PricingStratAnalytics_3 { width: 82%; height: 19%; top: 80%; left: 5%; }
+
+ /* These rules are for <AllFlows by Market dashboard> */
+
+.hoverMap#AllFlowsMarket .mapLink {border: 2px solid #018eb2;}
+.hoverMap#AllFlowsMarket .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#AllFlowsMarket:hover .mapLink {border: 2px solid #018eb2;}
+
+#AllFlowsMarket_1 { width: 6.5%; height: 6%; top: 6%; left: 77%; }
+#AllFlowsMarket_3 { width: 14.5%; height: 46%; top: 13%; left: 3%; }
+#AllFlowsMarket_5 { width: 10%; height: 6%; top: 6%; left: 88%; }
+
+/* These rules are for <Edit Workbook> */
+
+.hoverMap#EditWorkbook .mapLink {border: 2px solid #018eb2;}
+.hoverMap#EditWorkbook .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#EditWorkbook:hover .mapLink {border: 2px solid #018eb2;}
+
+#EditWorkbook_1 { width: 42%; height: 9.5%; top: 16%; left: 3%; }
+#EditWorkbook_2 { width: 16%; height: 10%; top: 29%; left: 3%; }
+#EditWorkbook_3 { width: 16%; height: 9%; top: 39.2%; left: 3%; }
+#EditWorkbook_4 { width: 16%; height: 18%; top: 72%; left: 3%; }
+#EditWorkbook_5 { width: 33%; height: 6.5%; top: 93%; left: 3%; }
+#EditWorkbook_6 { width: 6%; height: 4%; top: 25%; left: 61%; }
+#EditWorkbook_7 { width: 67%; height: 60%; top: 32%; left: 31.5%; }
+#EditWorkbook_8 { width: 12%; height: 41%; top: 26.2%; left: 19.5%; }
+#EditWorkbook_9 { width: 10%; height: 5%; top: 20%; left: 89%; }
+
+/* These rules are for <OPTIMiZATION INVENTORY> */
+
+.hoverMap#OptManager .mapLink {border: 2px solid #018EB2;}
+.hoverMap#OptManager .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#OptManager:hover .mapLink {border: 2px solid #018EB2;}
+
+#OptManager_1 { width: 16%; height: 6.6%; top: 11%; left: 82%; }
+#OptManager_2 { width: 17.5%; height: 4.5%; top: 24.3%; left: 2%; }
+#OptManager_3 { width: 18%; height: 5%; top: 24.5%; left: 25%; }
+#OptManager_4 { width: 16%; height: 6%; top: 5%; left: 82%;}
+#OptManager_5 { width: 10.5%; height: 5.8%; top: 40%; left: 87.3%; }
+#OptManager_6 { width: 6%; height: 4.5%; top: 34%; left: 92%; }
+#OptManager_7 { width: 12%; height: 6.5%; top: 50%; left: 4%; }
+#OptManager_8 { width: 15%; height: 5.6%; top: 40%; left: 44%; }
+#OptManager_9 { width: 8%; height: 5%; top: 29%; left: 73%; }
+#OptManager_10 { width: 7.5%; height: 6.2%; top: 50%; left: 89.3%; }
+
+ /* These rules are for <General Analytics screen> */
+
+.hoverMap#GenAnalytic .mapLink {border: 2px solid #fcb315;}
+.hoverMap#GenAnalytic .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#GenAnalytic:hover .mapLink {border: 2px solid #fcb315;}
+
+#GenAnalytic_2 { width: 46%; height: 7.5%; top: 1%; left: 12.5%; }
+#GenAnalytic_3 { width: 15.5%; height: 57%; top: 11%; left: 0.2%; }
+#GenAnalytic_4 { width: 3%; height: 16%; top: 11%; left: 15.7%; }
+#GenAnalytic_6 { width: 69%; height: 5.5%; top: 18.5%; left: 26%; }
+#GenAnalytic_7 { width: 62%; height: 12%; top: 24%; left: 18.5%; }
+
+/* These rules are for <General Analytics2 screen> */
+
+.hoverMap#GenAnalytic2 .mapLink {border: 2px solid #fcb315;}
+.hoverMap#GenAnalytic2 .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#GenAnalytic2:hover .mapLink {border: 2px solid #fcb315;}
+
+#GenAnalytic_5 { width: 10.5%; height: 5%; top: 36%; left: 18.5%; }
+#GenAnalytic_8 { width: 30%; height: 33%; top: 55%; left: 45%; }
+#GenAnalytic_9 { width: 5%; height: 5%; top: 41%; left: 24%; }
+#GenAnalytic_10 { width: 5%; height: 5%; top: 88.5%; left: 24%; }
+#GenAnalytic_11 { width: 5%; height: 5%; top: 88.5%; left: 76%; }
+#GenAnalytic_14 { width: 15%; height: 28%; top: 40%; left: 83%; }
+
+ /* These rules are for <General Analytics3 screen> */
+
+.hoverMap#GenAnalytic3 .mapLink {border: 2px solid #fcb315;}
+.hoverMap#GenAnalytic3 .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#GenAnalytic3:hover .mapLink {border: 2px solid #fcb315;}
+
+#GenAnalytic_1 { width: 12%; height: 7.5%; top: 1%; left: 0.2%; }
+#GenAnalytic_12 { width: 7.8%; height: 5.8%; top: 13%; left: 69%; }
+#GenAnalytic_13 { width: 14.5%; height: 5.8%; top: 13%; left: 77%; }
+#GenAnalytic_15 { width: 4%; height: 5%; top: 0%; left: 85%; }
+#GenAnalytic_16 { width: 3%; height: 5%; top: 0%; left: 89.1%; }
+#GenAnalytic_17 { width: 3.4%; height: 5%; top: 0%; left: 96.5%; }
+
+ /* These rules are for <Total Balances screen> */
+
+.hoverMap#TotalBalances .mapLink {border: 2px solid #018eb2;}
+.hoverMap#TotalBalances .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#TotalBalances:hover .mapLink {border: 2px solid #018eb2;}
+
+#TotalBalances_1 { width: 15%; height: 18%; top: 8%; left: 0.2%; }
+#TotalBalances_2 { width: 10.5%; height: 7%; top: 16%; left: 18.5%; }
+#TotalBalances_3 { width: 10.3%; height: 7%; top: 16%; left: 29.2%; }
+#TotalBalances_4 { width: 10.3%; height: 7%; top: 16%; left: 39.7%; }
+#TotalBalances_5 { width: 10.5%; height: 7%; top: 16%; left: 50%; }
+#TotalBalances_6 { width: 6%; height: 6%; top: 26%; left: 26%; }
+#TotalBalances_7 { width: 8%; height: 7.5%; top: 18%; left: 60.5%; }
+#TotalBalances_8 { width: 10%; height: 7.5%; top: 18%; left: 70.5%; }
+#TotalBalances_9 { width: 15%; height: 40%; top: 40%; left: 50%; }
+#TotalBalances_10 { width: 7.9%; height: 7%; top: 16%; left: 92%; }
+#TotalBalances_11 { width: 10%; height: 5%; top: 25.5%; left: 89.5%; }
+#TotalBalances_12 { width: 13.5%; height: 27%; top: 30.5%; left: 85%; }
+
+
+ /* These rules are for <Balances Flows screen> */
+
+.hoverMap#BalanceFlows .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BalanceFlows .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BalanceFlows:hover .mapLink {border: 2px solid #018eb2;}
+
+#BalanceFlows_1 { width: 15%; height: 17%; top: 8%; left: 0.2%; }
+#BalanceFlows_2 { width: 10.5%; height: 7%; top: 16%; left: 18.5%; }
+#BalanceFlows_3 { width: 10.3%; height: 7%; top: 16%; left: 29.2%; }
+#BalanceFlows_4 { width: 10.3%; height: 7%; top: 16%; left: 39.7%; }
+#BalanceFlows_5 { width: 10.5%; height: 7%; top: 16%; left: 50%; }
+#BalanceFlows_6 { width: 6%; height: 5%; top: 25.5%; left: 26%; }
+#BalanceFlows_7 { width: 8%; height: 8%; top: 17%; left: 60.5%; }
+#BalanceFlows_8 { width: 10%; height: 8%; top: 17%; left: 70.5%; }
+#BalanceFlows_10 { width: 10%; height: 5%; top: 25.5%; left: 89.5%; }
+#BalanceFlows_11 { width: 13.5%; height: 25%; top: 30.5%; left: 85%; }
+#BalanceFlows_12 { width: 13%; height: 37%; top: 38%; left: 60%; }
+#BalanceFlows_13 { width: 7.9%; height: 7%; top: 16%; left: 92%; }
+
+ /* These rules are for <Balances Flows screen> */
+
+.hoverMap#SwitchBalances .mapLink {border: 2px solid #018eb2;}
+.hoverMap#SwitchBalances .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#SwitchBalances:hover .mapLink {border: 2px solid #018eb2;}
+
+#SwitchBalances_1 { width: 15%; height: 17%; top: 13.5%; left: 0.2%; }
+#SwitchBalances_4 { width: 10.3%; height: 7%; top: 16%; left: 39.7%; }
+#SwitchBalances_2 { width: 10.5%; height: 7%; top: 16%; left: 18.5%; }
+#SwitchBalances_3 { width: 10.3%; height: 7%; top: 16%; left: 29.2%; }
+#SwitchBalances_5 { width: 10.5%; height: 7%; top: 16%; left: 50%; }
+#SwitchBalances_6 { width: 6%; height: 5%; top: 26.5%; left: 26%; }
+#SwitchBalances_7 { width: 8%; height: 8%; top: 17%; left: 60.5%; }
+#SwitchBalances_8 { width: 13.5%; height: 28%; top: 31.5%; left: 85%; }
+#SwitchBalances_9 { width: 10%; height: 5%; top: 26.5%; left: 89.5%; }
+#SwitchBalances_10 { width: 14.5%; height: 37%; top: 49%; left: 56%; }
+#SwitchBalances_11 { width: 15%; height: 62%; top: 30.5%; left: 0.2%; }
+#SwitchBalances_12 { width: 7.9%; height: 7%; top: 16%; left: 92%; }
+#SwitchBalances_13 { width: 11.5%; height: 5%; top: 8.5%; left: 0.2%; }
+
+ /* These rules are for <Maturing Balances screen> */
+
+.hoverMap#MaturingBalances .mapLink {border: 2px solid #018eb2;}
+.hoverMap#MaturingBalances .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#MaturingBalances:hover .mapLink {border: 2px solid #018eb2;}
+
+#MaturingBalances_1 { width: 15%; height: 17%; top: 8%; left: 0.2%; }
+#MaturingBalances_2 { width: 10.7%; height: 7%; top: 17.3%; left: 19%; }
+#MaturingBalances_3 { width: 10.3%; height: 7%; top: 17.3%; left: 29.7%; }
+#MaturingBalances_4 { width: 10.7%; height: 7%; top: 17.3%; left: 39.7%; }
+#MaturingBalances_5 { width: 10.5%; height: 7%; top: 17.3%; left: 50.5%; }
+#MaturingBalances_6 { width: 6%; height: 5%; top: 25.5%; left: 26%; }
+#MaturingBalances_7 { width: 10.5%; height: 7%; top: 17.3%; left: 60.7%; }
+#MaturingBalances_8 { width: 10%; height: 5%; top: 25.5%; left: 89.5%; }
+#MaturingBalances_9 { width: 10%; height: 39%; top: 58%; left: 48%; }
+#MaturingBalances_10 { width: 7.9%; height: 7%; top: 17.3%; left: 92%; }
+#MaturingBalances_11 { width: 13.5%; height: 12%; top: 30.5%; left: 85%; }
+
+/* These rules are for <Historic Roll Rates screen> */
+
+.hoverMap#HistoricRollRates .mapLink {border: 2px solid #018eb2;}
+.hoverMap#HistoricRollRates .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#HistoricRollRates:hover .mapLink {border: 2px solid #018eb2;}
+
+#HistoricRollRates_1 { width: 15%; height: 13%; top: 8.5%; left: 0.2%; }
+#HistoricRollRates_2 { width: 10.7%; height: 7%; top: 17.3%; left: 19%; }
+#HistoricRollRates_3 { width: 10.3%; height: 7%; top: 17.3%; left: 29.7%; }
+#HistoricRollRates_4 { width: 10.7%; height: 7%; top: 17.3%; left: 39.7%; }
+#HistoricRollRates_5 { width: 6%; height: 5%; top: 25.5%; left: 26.5%; }
+#HistoricRollRates_6 { width: 15%; height: 47%; top: 50%; left: 55%; }
+#HistoricRollRates_7 { width: 13.5%; height: 22%; top: 30.5%; left: 85%; }
+#HistoricRollRates_8 { width: 7.9%; height: 7%; top: 17.3%; left: 92%; }
+
+ /* These rules are for <Bank Data Analtycis> */
+
+.hoverMap#BDAnalytics .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BDAnalytics .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BDAnalytics:hover .mapLink {border: 2px solid #018eb2;}
+
+#BDAnalytics_1 { width: 13%; height: 6%; top: 7%; left: 34%; }
+#BDAnalytics_2 { width: 82%; height: 60%; top: 19%; left: 5%; }
+#BDAnalytics_3 { width: 82%; height: 19%; top: 80%; left: 5%; }
+
+ /* These rules are for <Bank Data Analtycis Balance dashboard> */
+
+.hoverMap#BDABalanceandRates .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BDABalanceandRates .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BDABalanceandRates:hover .mapLink {border: 2px solid #018eb2;}
+
+#BDABalanceandRates_1 { width: 6.5%; height: 6%; top: 7%; left: 75.5%; }
+#BDABalanceandRates_2 { width: 10%; height: 70%; top: 14%; left: 3%; }
+#BDABalanceandRates_3 { width: 11%; height: 6%; top: 7%; left: 87%; }
+
+ /* These rules are for <Acquisition Optimization Pricing Strat module> */
+
+.hoverMap#AcquisitionOptimization .mapLink {border: 2px solid #018eb2;}
+.hoverMap#AcquisitionOptimization .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#AcquisitionOptimization:hover .mapLink {border: 2px solid #018eb2;}
+
+#AcqOptimization_1 { width: 13%; height: 6.8%; top: 8%; left: 0.2%; }
+#AcqOptimization_2 { width: 7%; height: 6%; top: 20.7%; left: 93%; }
+#AcqOptimization_3 { width: 13%; height: 37%; top: 15%; left: 0.2%; }
+#AcqOptimization_4 { width: 9.5%; height: 7%; top: 20.7%; left: 15%; }
+#AcqOptimization_5 { width: 8.5%; height: 7%; top: 20.7%; left: 24.5%; }
+#AcqOptimization_6 { width: 84%; height: 71%; top: 28%; left: 15%; }
+
+/* These rules are for <AcquisitionElasticity dashboard> */
+
+.hoverMap#AcquisitionElasticity .mapLink {border: 2px solid #018eb2;}
+.hoverMap#AcquisitionElasticity .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#AcquisitionElasticity:hover .mapLink {border: 2px solid #018eb2;}
+
+#AcquisitionElasticity_1 { width: 13.5%; height: 26%; top: 7.5%; left: 1%; }
+#AcquisitionElasticity_2 { width: 74%; height: 49%; top: 38.5%; left: 22%; }
+#AcquisitionElasticity_3 { width: 17%; height: 21%; top: 17%; left: 55.5%; }
+#AcquisitionElasticity_4 { width: 6.5%; height: 73%; top: 16%; left: 14.5%; }
+#AcquisitionElasticity_5 { width: 77%; height: 10%; top: 88%; left: 21%; }
+#AcquisitionElasticity_6 { width: 13.5%; height: 10%; top: 34%; left: 1%; }
+
+/* These rules are for <ObservedBetas Dashboard> */
+
+.hoverMap#ObservedBetas .mapLink {border: 2px solid #018eb2;}
+.hoverMap#ObservedBetas .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#ObservedBetas:hover .mapLink {border: 2px solid #018eb2;}
+
+#ObservedBetas_1 { width: 15%; height: 9%; top: 8%; left: 1%; }
+#ObservedBetas_2 { width: 15%; height: 11%; top: 50.5%; left: 1%; }
+#ObservedBetas_3 { width: 15%; height: 8%; top: 61.8%; left: 1%; }
+#ObservedBetas_4 { width: 15%; height: 32.5%; top: 17.5%; left: 1%; }
+#ObservedBetas_5 { width: 38%; height: 78%; top: 15%; left: 26%; }
+#ObservedBetas_6 { width: 80%; height: 35%; top: 60%; left: 18%; }
+#ObservedBetas_7 { width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+
+
+/* These rules are for <Balance Flows Over Time Dashboard> */
+
+.hoverMap#BalanceFLowsOverTime .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BalanceFLowsOverTime .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BalanceFLowsOverTime:hover .mapLink {border: 2px solid #018eb2;}
+
+#BalanceFLowsOverTime_1 { width: 13.5%; height: 42.5%; top: 7%; left: 0.5%; }
+#BalanceFLowsOverTime_2 { width: 13.5%; height: 18%; top: 50%; left: 0.5%; }
+#BalanceFLowsOverTime_3 { width: 13.5%; height: 10%; top: 76%; left: 0.5%; }
+#BalanceFLowsOverTime_4 { width: 33%; height: 10%; top: 7%; left: 40%; }
+#BalanceFLowsOverTime_5 { width: 77%; height: 37%; top: 54%; left: 22%; }
+#BalanceFLowsOverTime_6 { width: 7%; height: 6.5%; top: 0.1%; left: 71%; }
+
+/* These rules are for <mCOF Over Time Dashboard> */
+
+.hoverMap#mCOFOverTime .mapLink {border: 2px solid #018eb2;}
+.hoverMap#mCOFOverTime .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#mCOFOverTime:hover .mapLink {border: 2px solid #018eb2;}
+
+#mCOFOverTime_1 { width: 13%; height: 17%; top: 8%; left: 1%; }
+#mCOFOverTime_2 { width: 13%; height: 10%; top: 25.5%; left: 1%; }
+#mCOFOverTime_3 { width: 13%; height: 7%; top: 36%; left: 1%; }
+#mCOFOverTime_4 { width: 13%; height: 25%; top: 44.5%; left: 1%; }
+#mCOFOverTime_5 { width: 47%; height: 31%; top: 60%; left: 17%; }
+#mCOFOverTime_6 { width: 28%; height: 65.5%; top: 16%; left: 70.5%; }
+#mCOFOverTime_7 { width: 47%; height: 34%; top: 15%; left: 17%; }
+#mCOFOverTime_8 { width: 7%; height: 6.5%; top: 0.1%; left: 75%; }
+
+/* These rules are for <Flow of Funds Waterfall Dashboard> */
+
+.hoverMap#FlowofFundsWaterfall .mapLink {border: 2px solid #018eb2;}
+.hoverMap#FlowofFundsWaterfall .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#FlowofFundsWaterfall:hover .mapLink {border: 2px solid #018eb2;}
+
+#FlowofFunds_1 { width: 14.5%; height: 41%; top: 7%; left: 1%; }
+#FlowofFunds_2 { width: 14.5%; height: 16.5%; top: 48%; left: 1%; }
+#FlowofFunds_3 { width: 14.5%; height: 24%; top: 64.5%; left: 1%; }
+#FlowofFunds_4 { width: 7%; height: 6.5%; top: 0.1%; left: 71%; }
+#FlowofFunds_5 { width: 13%; height: 50.5%; top: 23%; left: 43%; }
+#FlowofFunds_6 { width: 7%; height: 50.5%; top: 23%; left: 92%; }
+#FlowofFunds_7 { width: 83%; height: 26%; top: 73.5%; left: 16%; }
+
+ /* These rules are for <Reports page> */
+
+.hoverMap#Reports .mapLink {border: 2px solid #018eb2;}
+.hoverMap#Reports .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#Reports:hover .mapLink {border: 2px solid #018eb2;}
+
+#Reports_1 { width: 16%; height: 8%; top: 7%; left: 1%; }
+#Reports_2 { width: 14.5%; height: 8%; top: 7%; left: 17.5%; }
+#Reports_3 { width: 16%; height: 8%; top: 7%; left: 32.5%; }
+#Reports_4 { width: 5.5%; height: 6%; top: 15.5%; left: 1%; }
+#Reports_5 { width: 5.5%; height: 6%; top: 15.5%; left: 6.5%; }
+#Reports_6 { width: 40%; height: 76%; top: 21.5%; left: 1%; }
+#Reports_7 { width: 17%; height: 76%; top: 21.5%; left: 41.5%; }
+#Reports_8 { width: 39%; height: 76%; top: 21.5%; left: 59%; }
+
+/* These rules are for <Home page> */
+
+.hoverMap#DepositsHomePage .mapLink {border: 2px solid #018EB2;}
+.hoverMap#DepositsHomePage .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#DepositsHomePage:hover .mapLink {border: 2px solid #018EB2;}
+
+#DepositsHomePage_1 { width: 49%; height: 11.5%; top: 11%; left: 50%; }
+#DepositsHomePage_2 { width: 47%; height: 33%; top: 11%; left: 2%; }
+#DepositsHomePage_3 { width: 49%; height: 48%; top: 23%; left: 50%; }
+#DepositsHomePage_4 { width: 4%; height: 5%; top: 0.1%; left: 88%; }
+#DepositsHomePage_5 { width: 96.5%; height: 23.5%; top: 76%; left: 1.5%; }
+#DepositsHomePage_6 { width: 47%; height: 15%; top: 44.5%; left: 2%; }
+#DepositsHomePage_7 { width: 3%; height: 5%; top: 0.1%; left: 92%; }
+
+/* These rules are for <GROWTH AND RATES by REgion DASHBOARD> */
+
+.hoverMap#GrowthRatesDashbyRegion .mapLink {border: 2px solid #018eb2;}
+.hoverMap#GrowthRatesDashbyRegion .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#GrowthRatesDashbyRegion:hover .mapLink {border: 2px solid #018eb2;}
+
+#GrowthRatesDashbyRegion_1 { width: 15.5%; height: 51%; top: 7.5%; left: 0.7%; }
+#GrowthRatesDashbyRegion_2 { width: 7%; height: 6.5%; top: 0.1%; left: 71%; }
+#GrowthRatesDashbyRegion_3 { width: 24%; height: 27%; top: 23%; left: 46%; }
+#GrowthRatesDashbyRegion_4 { width: 65%; height: 28%; top: 66%; left: 32%; }
+#GrowthRatesDashbyRegion_5 { width: 15.5%; height: 24%; top: 75%; left: 0.7%; }
+
+/* These rules are for <Market Data Analtycis> */
+
+.hoverMap#MDAnalytics .mapLink {border: 2px solid #018eb2;}
+.hoverMap#MDAnalytics .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#MDAnalytics:hover .mapLink {border: 2px solid #018eb2;}
+
+#MDAnalytics_1 { width: 11%; height: 6%; top: 0.1%; left: 41%; }
+#MDAnalytics_2 { width: 31.5%; height: 36%; top: 14%; left: 18%; }
+#MDAnalytics_3 { width: 99%; height: 47%; top: 52%; left: 0.5%; }
+#MDAnalytics_4 { width: 14.5%; height: 36%; top: 14%; left: 2%; }
+
+ /* These rules are for <Beta Dashboard screen> */
+
+.hoverMap#BetaDash .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BetaDash .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BetaDash:hover .mapLink {border: 2px solid #018eb2;}
+
+#BetaDash_1 { width: 12.5%; height: 10%; top: 17%; left: 1%; }
+#BetaDash_2 { width: 12.5%; height: 47%; top: 27%; left: 1%; }
+#BetaDash_5 { width: 49%; height: 9%; top: 8%; left: 50%; }
+#BetaDash_6 { width: 85%; height: 13%; top: 17%; left: 13.6%; }
+#BetaDash_7 { width: 48.9%; height: 9%; top: 8%; left: 1%; }
+#BetaDash_8 { width: 12.5%; height: 23%; top: 75%; left: 1%; }
+#BetaDash_9 { width: 69.5%; height: 34%; top: 64%; left: 13.6%; }
+#BetaDash_10 { width: 16%; height: 22%; top: 52%; left: 83.5%; }
+#BetaDash_11 { width: 69.5%; height: 32%; top: 31%; left: 13.6%; }
+#BetaDash_12 { width: 7.3%; height: 7%; top: 0.1%; left: 71%; }
+#BetaDash_13 { width: 7.3%; height: 7%; top: 0.1%; left: 92%; }
+
+/* These rules are for <Vintage Data Summary screen> */
+
+.hoverMap#VDSummary .mapLink {border: 2px solid #018eb2;}
+.hoverMap#VDSummary .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#VDSummary:hover .mapLink {border: 2px solid #018eb2;}
+
+#VDSummary_1 { width: 13%; height: 7%; top: 16%; left: 0.2%; }
+#VDSummary_2 { width: 13%; height: 25.5%; top: 23%; left: 0.2%; }
+#VDSummary_3 { width: 9.2%; height: 9%; top: 18%; left: 26.5%; }
+#VDSummary_4 { width: 9.5%; height: 9%; top: 18%; left: 17%; }
+#VDSummary_5 { width: 9.5%; height: 9%; top: 18%; left: 35.5%; }
+#VDSummary_6 { width: 9.2%; height: 9%; top: 18%; left: 45%; }
+#VDSummary_7 { width: 9.4%; height: 9%; top: 18%; left: 63.5%; }
+#VDSummary_8 { width: 6.8%; height: 7%; top: 18.5%; left: 93%; }
+#VDSummary_9 { width: 7%; height: 9%; top: 20%; left: 73%; }
+#VDSummary_10 { width: 9%; height: 9%; top: 20%; left: 81.5%; }
+#VDSummary_11 { width: 8.5%; height: 8%; top: 48%; left: 52%; }
+#VDSummary_12 { width: 5%; height: 6%; top: 28%; left: 23%; }
+#VDSummary_13 { width: 9.5%; height: 9%; top: 18%; left: 54%; }
+#VDSummary_14 { width: 15%; height: 35%; top: 33%; left: 84.5%; }
+#VDSummary_15 { width: 13%; height: 7%; top: 9%; left: 0.2%; }
+
+/* These rules are for <Vintage Data Customer Drilldown screen> */
+
+.hoverMap#VDCustDrill .mapLink {border: 2px solid #018eb2;}
+.hoverMap#VDCustDrill .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#VDCustDrill:hover .mapLink {border: 2px solid #018eb2;}
+
+#VDCustDrill_1 { width: 13%; height: 6.5%; top: 15.5%; left: 0.2%; }
+#VDCustDrill_2 { width: 13%; height: 24%; top: 22%; left: 0.2%; }
+#VDCustDrill_3 { width: 9.5%; height: 8%; top: 18%; left: 26.5%; }
+#VDCustDrill_4 { width: 9.5%; height: 8%; top: 18%; left: 17%; }
+#VDCustDrill_5 { width: 9.5%; height: 8%; top: 18%; left: 35.8%; }
+#VDCustDrill_6 { width: 9.2%; height: 8%; top: 18%; left: 45.3%; }
+#VDCustDrill_7 { width: 9.4%; height: 8%; top: 18%; left: 63.8%; }
+#VDCustDrill_8 { width: 6.8%; height: 7%; top: 18.5%; left: 93%; }
+#VDCustDrill_9 { width: 7%; height: 9%; top: 20%; left: 73.3%; }
+#VDCustDrill_10 { width: 9%; height: 9%; top: 20%; left: 82%; }
+#VDCustDrill_11 { width: 10.5%; height: 8%; top: 46%; left: 61%; }
+#VDCustDrill_12 { width: 5%; height: 6%; top: 27.5%; left: 23.5%; }
+#VDCustDrill_13 { width: 9.5%; height: 8%; top: 18%; left: 54.3%; }
+#VDCustDrill_14 { width: 15%; height: 32%; top: 33%; left: 84.5%; }
+#VDCustDrill_15 { width: 13%; height: 6.5%; top: 9%; left: 0.2%; }
+
+/* These rules are for the <Balance Waterfall module> */
+
+.hoverMap#BalanceWaterfall .mapLink {border: 2px solid #018EB2;}
+.hoverMap#BalanceWaterfall .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BalanceWaterfall:hover .mapLink {border: 2px solid #018EB2;}
+
+#BalanceWaterfall_1 { width: 14.5%; height: 21%; top: 8.5%; left: 0.2%; }
+#BalanceWaterfall_2 { width: 10.5%; height: 6.6%; top: 19%; left: 18.5%; }
+#BalanceWaterfall_3 { width: 10%; height: 6.6%; top: 19%; left: 29.2%; }
+#BalanceWaterfall_4 { width: 10%; height: 6.6%; top: 19%; left: 39.4%; }
+#BalanceWaterfall_5 { width: 6.2%; height: 6%; top: 26%; left: 25%; }
+#BalanceWaterfall_6 { width: 18%; height: 6.5%; top: 46%; left: 68.5%; }
+#BalanceWaterfall_7 { width: 7.8%; height: 6%; top: 19%; left: 92%; }
+
+ /* These rules are for the <Balance Waterfall Dimension Migration module> */
+
+.hoverMap#BalanceWaterfall_OneMonth .mapLink {border: 2px solid #018eb2;}
+.hoverMap#BalanceWaterfall_OneMonth .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#BalanceWaterfall_OneMonth:hover .mapLink {border: 2px solid #018eb2;}
+
+#BalanceWaterfall_OneMonth_1 { width: 14.5%; height: 13%; top: 14.5%; left: 0.2%; }
+#BalanceWaterfall_OneMonth_2 { width: 12%; height: 10%; top: 85%; left: 78%; }
+#BalanceWaterfall_OneMonth_3 { width: 16.5%; height: 7%; top: 43%; left: 72.5%; }
+#BalanceWaterfall_OneMonth_4 { width: 2.5%; height: 55%; top: 33%; left: 24%; }
+
+/* These rules are for <Reference Rates (Footprint) screen> */
+
+.hoverMap#RefRatesFootprint .mapLink {border: 2px solid #018eb2;}
+.hoverMap#RefRatesFootprint .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#RefRatesFootprint:hover .mapLink {border: 2px solid #018eb2;}
+
+#RefRatesFootprint_1 { width: 15%; height: 13%; top: 8.8%; left: 0.2%; }
+#RefRatesFootprint_2 { width: 70%; height: 17.5%; top: 60%; left: 27%; }
+#RefRatesFootprint_3 { width: 10.3%; height: 7.3%; top: 18.5%; left: 18.5%; }
+#RefRatesFootprint_4 { width: 10.5%; height: 7.3%; top: 18.5%; left: 29%; }
+#RefRatesFootprint_5 { width: 6%; height: 5%; top: 26.2%; left: 25%; }
+#RefRatesFootprint_6 { width: 9.5%; height: 26%; top: 34%; left: 74%; }
+#RefRatesFootprint_7 { width: 7.9%; height: 7%; top: 19%; left: 92%; }
+
+/* These rules are for <Reference Rates (Market) screen> */
+
+.hoverMap#RefRatesMarket .mapLink {border: 2px solid #018eb2;}
+.hoverMap#RefRatesMarket .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#RefRatesMarket:hover .mapLink {border: 2px solid #018eb2;}
+
+#RefRatesMarket_1 { width: 15%; height: 13%; top: 8.8%; left: 0.2%; }
+#RefRatesMarket_2 { width: 11%; height: 7.3%; top: 22%; left: 41.5%; }
+#RefRatesMarket_3 { width: 11%; height: 7.3%; top: 22%; left: 18.5%; }
+#RefRatesMarket_4 { width: 11%; height: 7.3%; top: 22%; left: 30%; }
+#RefRatesMarket_5 { width: 6%; height: 5%; top: 30%; left: 24.5%; }
+#RefRatesMarket_6 { width: 11%; height: 11%; top: 55.5%; left: 45%; }
+#RefRatesMarket_7 { width: 7.9%; height: 7%; top: 21%; left: 92%; }
+
+/* These rules are for <Overview (Market) screen> */
+
+.hoverMap#OverviewMarkets .mapLink {border: 2px solid #018eb2;}
+.hoverMap#OverviewMarkets .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#OverviewMarkets:hover .mapLink {border: 2px solid #018eb2;}
+
+#OverviewMarkets_1 { width: 17%; height: 27%; top: 4%; left: 0.2%; }
+#OverviewMarkets_2 { width: 12%; height: 67%; top: 32%; left: 19%; }
+#OverviewMarkets_3 { width: 46.5%; height: 67%; top: 32%; left: 31%; }
+#OverviewMarkets_5 { width: 10%; height: 67%; top: 32%; left: 77.5%; }
+#OverviewMarkets_6 { width: 10%; height: 67%; top: 32%; left: 87.5%; }
+
+/* These rules are for <CDA Summary Overview screen> */
+
+.hoverMap#CDASummary .mapLink {border: 2px solid #018eb2;}
+.hoverMap#CDASummary .mapLink.disableStuff {border: none; animation: none;}
+.hoverMap#CDASummary:hover .mapLink {border: 2px solid #018eb2;}
+
+#CDASummary_1 { width: 15%; height: 24%; top: 0.1%; left: 66.4%; }
+#CDASummary_2 { width: 37%; height: 7%; top: 15%; left: 29%; }

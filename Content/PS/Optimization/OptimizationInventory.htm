@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5Top" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Optimization Inventory</title>
+        <link href="../../Resources/Images/swoosh.ico" rel="icon" type="image/x-icon" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/ExpandAllIC2.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/Collapse2.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Gold bar and row table.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our help and documentation" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                        </div>
+                                        <div class="topic-layout">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                        <img alt="Expand all" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Optimization Inventory</h1>
+                                                <p>The <b>Optimization </b>module leverages the scenario engine to identify optimal portfolio pricing.  Rather than run a series of scenarios using the <a href="../Scenarios/ScenarioBuilder.htm">Scenario Builder</a>, find optimal rates that most efficiently achieve your target under a set of business constraints and based on a set of assumptions that you control that return an optimization pricing grid. </p>
+                                                <p>From the <b>Optimization</b> landing page, you can: </p>
+                                                <ul>
+                                                    <li value="1">View Optimizations created by any member of your team </li>
+                                                    <li value="2">Manage existing optimizations you created </li>
+                                                    <li value="3"><a href="ManageDefaults.htm" class="MCXref xref">Manage Defaults (Optimization)</a>
+                                                        <br />
+                                                    </li>
+                                                    <li value="4"><a href="OptimizationBuilder.htm">Build new optimizations either from scratch or based on an existing optimization</a>
+                                                    </li>
+                                                </ul>
+                                                <p><i style="font-weight: bold;">Hover your mouse over the screenshot below to display pop-up content detailing sections of the screen:</i>
+                                                </p>
+                                                <div class="hoverMap" id="OptManager">
+                                                    <img src="../../Resources/Images/Optimization Inventory.jpg" id="hoverImage" class="mapImage" style="border-left-style: solid;border-left-width: 1pt;border-left-color: ;border-right-style: solid;border-right-width: 1pt;border-right-color: ;border-top-style: solid;border-top-width: 1pt;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: ;" />
+                                                    <div class="overlay">
+                                                    </div><a class="mapLink hoverImage" id="OptManager_1" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_New_Optbutton">Hover over to view</a><a class="mapLink hoverImage" id="OptManager_2" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_OptInventory_hover">hover over to view a description</a><a class="mapLink hoverImage" id="OptManager_3" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_ShortBy_hover">hover over to view a description</a><a class="mapLink hoverImage" id="OptManager_4" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_ManageDefaultRules">hover over to view a description</a><a class="mapLink hoverImage" id="OptManager_5" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_ViewOutput_hover">hover over to view a description</a><a class="mapLink hoverImage" id="OptManager_6" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_More_hover">hover over to view a description</a><a class="mapLink hoverImage" id="OptManager_7" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_NewBasedOn_hover">Hover over to view definition.</a><a class="mapLink hoverImage" id="OptManager_8" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_ChangedSinceLastRun_hover">Hover over to view definition.</a><a class="mapLink hoverImage" id="OptManager_9" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_Running_hover">Hover over to view definition.</a><a class="mapLink hoverImage" id="OptManager_10" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#OptManager_Run_hover">Hover over to view definition.</a>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_New_Optbutton">
+                                                    <p>Click to open the <b>Optimization Builder Wizard </b>which allows you to create a new scenario from scratch. For more, see the <a href="OptimizationBuilder.htm">Optimization Builder</a> page.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_OptInventory_hover">
+                                                    <p>Type any Optimization [partial] name, creator's [partial] name, or a partial description of an existing Optimization. </p>
+                                                    <p class="Note" style="font-size: 10pt;"><b>Note</b><span style="font-size: 10pt;">: Optimizations displayed have been created by anyone on your team. Though you can only edit optimizations you created, you can build new ones based on a colleague's optimization.</span>
+                                                    </p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_ShortBy_hover">
+                                                    <p>Sort ascending or descending by <b>Last Run</b>, <b>Created On</b> date, or <b>Optimization Name</b>.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_ManageDefaultRules">
+                                                    <p>Click to set default rules to streamline the Optimization process. Refer to <a href="ManageDefaults.htm">Manage Default Rules</a> for details.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_ViewOutput_hover">
+                                                    <p>Click to open the <b>Optimization Analysis </b>page for the selected Optimization.</p>
+                                                    <p class="Note" style="font-size: 10pt;"><b>Note</b>: If it has never been run before, a<b> Run</b> button is displayed instead.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_More_hover">
+                                                    <p>Click to expand the listed Optimization and view all of the rules. Additionally, you can <b>Run</b> the Optimization, <b>Edit</b> or <b>Delete </b>the Optimization (available only if you were the creator), click <b>New Based on</b> to create a new Optimization which will initially include all of the rules based on this one, or click <b>Download</b>.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_NewBasedOn_hover">
+                                                    <p>Create a new Optimization which will initially include all of the rules based on this one.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_ChangedSinceLastRun_hover">
+                                                    <p>Displayed when a rule is added or removed from an Optimization, or when a rule in an Optimization is edited.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_Running_hover">
+                                                    <p>Displayed when the Optimization is currently running.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="OptManager_Run_hover">
+                                                    <p>Click to run an optimization. This will take several minutes to run, depending on the amount of data (as a rule of thumb, optimizations take longer to run than scenarios). You will receive an email notification when the optimization has been completed with a link to access results.</p>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="MethodologyandDefinitions" href="#MethodologyandDefinitions">Methodology and Definitions</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+                                                            <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                                <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                                <col style="width: 171px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                                <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;" colspan="2"><b class="Tableheader">Methodology</b>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Check back later in the summer of 2018 for Optimization Methodology content.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b style="font-family: 'Century Gothic'; font-size: 14pt;">Definitions</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Click to display the full collection of PriceTek Deposits data definitions</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                            <img src="../../Resources/Images/Changed Since Last Run.JPG" />
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Displayed when a rule is added or removed from an Optimization, or when a rule in an Optimization is edited.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                            <img src="../../Resources/Images/Running.JPG" />
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Displayed when the Optimization is currently running.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="TipsTricksFAQs" href="#TipsTricksFAQs">Tips, Tricks, &amp; FAQs</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                            <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <col style="width: 220px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b class="Tableheader">Tips &amp; Tricks</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Use the <b>Search </b>bar to find optimizations. Any part of any word in the <b>Optimization name</b>, <b>Creator name</b>, or <b>Description </b>is searchable.                            </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b style="font-family: 'Century Gothic'; font-size: 14pt;">FAQs</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b>When should I&#160;use the Optimization functionality and when should I&#160;use Scenarios?</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                        <p>Use <b>Scenarios </b>to explore a range of possibilities, for example to see what the potential impact would be of a rate change of +5, 10, 15, 20, OR 25&#160;BPS&#160;- and evaluate the changes at each step, and observe the fluctuation across different dimensions. </p>
+                                                                        <p>Use <b>Optimization </b>to identify a single rate position that is optimal given a specific target and constraints.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="font-family: Calibri;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;"><b>How will I&#160;know when my Optimization finishes running?</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="font-family: Calibri;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">You will receive an email once your Optimization finishes running.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="font-family: Calibri;background-color: #ffffff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b>I don't remember if I&#160;reran my Optimization after I&#160;made some changes. How can I&#160;tell?</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="font-family: Calibri;background-color: #ffffff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">Any Optimization that has changed since the last time it has been run will be flagged with a Gold <b>Changed Since Last Run </b>tag. Additionally, if an Optimization is blue in the inventory (or white in Optimization Analysis), then the results are up to date with the most recent rule changes.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="font-family: Calibri;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;"><b>In my Optimization Inventory, I only see a button to View Output. How do I rerun my Scenario?</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="font-family: Calibri;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Click the <img src="../../Resources/Images/More.JPG" style="border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /> button to open the Optimization Details panel. This panel includes a <b>Run </b>button, as well as an <b>Edit </b>and <b>Delete </b>button. From here, you can also see the list of rules for this Optimization. Click <b>New Optimization Based On </b>to create a new optimization based on this one.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <h2>Related Topics</h2>
+                                                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                    <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                    <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" style="width: 688px;" />
+                                                    <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;"><a href="OptimizationBuilder.htm" class="MCXref xref">Optimization Builder</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;"><a href="ManageDefaults.htm" class="MCXref xref">Manage Defaults (Optimization)</a>
+                                                            </td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">&#160;</td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" colspan="2" style="padding: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">
+                                                                <table style="width: 100%; table-layout: fixed;">
+                                                                    <col />
+                                                                    <tbody>
+                                                                        <tr />
+                                                                        <tr>
+                                                                            <td colspan="2"><a href="OptimizationAnalysis.htm" class="MCXref xref">Optimization Analysis</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>&#160;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" src="../../Resources/qtip2/jquery.qtip.js">
+                                    </script>
+                                    <script type="text/javascript" src="../../Resources/hovermap/hovermap.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

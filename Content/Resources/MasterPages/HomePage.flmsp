@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+        <link href="../Images/swoosh.ico" rel="icon" type="image/x-icon" />
+        <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
+    </head>
+    <map id="map1">
+        <area shape="rectangle" coords="-1,3,30,26" dragDirection="0" href="mailto:pricetek_support@novantas.com?subject=PriceTek Deposits Help:" />
+    </map>
+    <body>
+        <div id="contentBody" class="off-canvas-main">
+            <MadCap:bodyProxy />
+            <div class="footer center">
+                <div class="home-master-page-footer">
+                    <div>
+                        <table style="width: 100%; table-layout: fixed;">
+                            <col />
+                            <col />
+                            <col />
+                            <col />
+                            <tbody>
+                                <tr>
+                                    <div>
+                                        <p><a href="https://www.novantas.com/cookie-notice-and-privacy-policy/" target="_blank">Privacy policy</a>
+                                        </p>
+                                        <p>
+                                        </p>
+                                    </div>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="../Images/pricetek logo-04.png" style="width: 151px;height: 28px;" />
+                        </p>
+                        <p><MadCap:variable name="General.CompanyName" />
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="../Images/Assets/Icons/MainIcons/Contact-gray.png" usemap="#map1" style="width: 29px;height: 29px;" />
+                        </p>
+                        <p>pricetek_support@novantas.com</p>
+                        <p><MadCap:variable name="General.PhoneNumber" />
+                        </p>
+                        <p><MadCap:variable name="General.StreetAddress" /> <MadCap:variable name="General.CityStateZip" /></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

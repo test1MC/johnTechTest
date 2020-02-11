@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5Top" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Vintage Data">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Customer Drill-down</title>
+        <link href="../Resources/Images/swoosh.ico" rel="icon" type="image/x-icon" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/ExpandAllIC2.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Collapse2.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/Gold bar and row table.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our help and documentation" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="topic-layout">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                        <img alt="Expand all" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Customer Drill-down</h1>
+                                                <p>The <b>Customer Drill-down </b>module isolates specific groups of <b>customers</b> based on account and vintage attributes, and perform full portfolio analysis on those people over time. &#160;</p>
+                                                <p>On this module the <b>Data Filters </b>are used to isolate Vintage and product attributes - and the dataset becomes, "all accounts of any customer that had an account meeting the criteria set in the <b>Data Filters</b>."&#160;</p>
+                                                <ul>
+                                                    <li value="1">For example, this module could be used to answer questions like "For the customers that participated in the January 2018 MMA&#160;Campaign in the Gold Product, what other products with the bank did they have at the time, or grow over time?" </li>
+                                                    <li value="2">The module can be thought of as a two step process. 1)&#160;Select products that define a set of customers. 2)&#160;Analyze *all accounts*&#160;<i>of those customers.</i> </li>
+                                                </ul>
+                                                <p><b style="font-style: italic;">Hover your mouse over the screenshot below to display pop-up content detailing sections of the screen:</b>
+                                                </p>
+                                                <p>Be sure to review the <a href="../Intro/HowToUseAnalyticModules.htm" class="MCXref xref">How To Use Analytic Modules</a> topic for contextual hover over help that applies to the <b>Customer Drill-down</b> module.</p>
+                                                <p>
+                                                    <div class="hoverMap" id="VDCustDrill">
+                                                        <img src="../Resources/Images/CustomerDrilldown2.jpg" id="hoverImage" class="mapImage" style="border-left-style: solid;border-left-width: 1pt;border-left-color: ;border-right-style: solid;border-right-width: 1pt;border-right-color: ;border-top-style: solid;border-top-width: 1pt;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: ;" />
+                                                        <div class="overlay">
+                                                        </div><a class="mapLink hoverImage" id="VDCustDrill_1" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_VintageType">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_2" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_DateRange">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_3" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_XAxisValue">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_4" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_Metric">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_5" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_GroupBY">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_6" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_MetricAgg">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_7" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_AcctOrigin">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_8" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_UpdateView">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_9" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_HideVin">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_10" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_GroupInsign">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_11" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_Hover">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_12" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_Table">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_13" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_Customers">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_14" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_Legend">Hover over for a description.</a><a class="mapLink hoverImage" id="VDCustDrill_15" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#VDC_ExistedOn">Hover over for a description.</a>
+                                                    </div>
+                                                </p>
+                                                <div class="imageMapPop" id="VDC_DateRange">
+                                                    <p>Enter the <b>Earliest Vintage</b> date and the <b>Latest Vintage</b> date to isolate the Vintages to be included in data output.</p>
+                                                    <p>Choose the <b>Start Date</b> and <b>End Date</b> to isolate the months of data included in the analysis. &#160;This is separate and distinct from the <b>Earliest/Latest Vintage</b> data filters. For example, you could view the balances left in Vintages from January 2016 through June 2016 (set with the <b>Earliest&#160;</b>and <b>Latest Vintage </b>selections), <i>starting in</i> July 2016 - with July 2016 selected in the <b>Start Date </b>field. </p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_ExistedOn">
+                                                    <p>Determines how accounts are being filtered. Choose  <b>Vintage</b> to filter on Vintage, the date accounts originated. Alternatively, choose <b>Existed On Date</b> to capture accounts that were open with a positive balance on a given date, regardless of when they originated. </p>
+                                                    <p class="Note"><b>Note:</b>&#160;When filtering by Vintage, it is possible to select a range of Vintages&#160;(using fields <b>Earliest Vintage</b> and <b>Latest Vintage</b> that will be visible). When filtering by <b>Existed On Date</b>, then those date fields are replaced by a single <b>Existed on Date</b> drop-down, and analysis can be performed based on a single month snapshot of existing accounts. </p>
+                                                    <p>
+                                                        <img src="../Resources/Images/ExistedOnDate.jpg" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                                                    </p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_VintageType">
+                                                    <p>Click the drop-down to choose between <b>Standard Vintages</b>, Legacy vintages (if applicable), or vintage data sets affected by bank acquisitions. This drop-down is institution-specific. For more details, refer to the <a href="VintageDataMethodology.htm#Understanding_Account_Origin" target="_blank"><b>Understanding Account Origin</b> subheader on the <b>Vintage Data Methodology</b> page</a>.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_Metric">
+                                                    <p>Choose one of the following:</p>
+                                                    <p><b>Balances</b>: The total balance amount that stays with the bank.</p>
+                                                    <p><b>Accounts</b>: The total number of accounts that stay with the bank.</p>
+                                                    <p><b>Weighted Rate</b>: Measures the annual rate of the accounts as of the period end date and is not calculated based on interest dollars paid.</p>
+                                                    <p><b>Average Bal/Acct</b>: The average total balance amount in each account.</p>
+                                                    <p><b>Customers</b>: The number of customers that stay with the bank.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_XAxisValue">
+                                                    <p>Choose either <b>Time</b>, a portfolio dimension or calculated Vintage metric to display on the X-Axis. &#160;</p>
+                                                    <p class="Note"><b>Note</b>: If choosing a non-time value, be sure to actively note the <b>Metric Aggregation</b> used to combine data from multiple time periods. </p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_GroupBY">
+                                                    <p>Choose one of your institutional <b>Data Filters</b> (e.g., Line of Business, Product Group), or choose <b>CD Renewal Status</b> (i.e., First Maturity or Multiple Maturities), <b>Account Origin</b>, <b> Vintage Month</b>, <b>Vintage Quarter</b>, or <b>Vintage Year</b>.  You can also choose <b>None</b>.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_MetricAgg">
+                                                    <p>Choose either:</p>
+                                                    <ul>
+                                                        <li value="1"><b>Sum</b>: The total amount over a selected time period (only accessible if the <b>X-Axis Value</b> is <b>Time </b>); calculated by dividing the total remaining metric by the total metric’s starting value, independent of Vintage.</li>
+                                                        <li value="2"><b>Average Over Observation</b>: The average for the selected <b>Metric</b> across the selected <b>X-Axis Value</b>. Not accessible if the <b>X-Axis Value</b> is <b>Time</b>.</li>
+                                                        <li value="3"><b>Monthly Average</b>: The monthly average for the selected <b>Metric</b> across the selected <b>X-Axis Value</b>. Not accessible if the <b>X-Axis Value</b> is <b>Time</b>.</li>
+                                                        <li value="4"><b>Weighted Average</b>: The weighted annual rate of accounts as of the period end date across the selected <b>X-Axis Value</b>. Only pertains if the <b>Metric</b> selected is <b>Weighted Rate</b>.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_AcctOrigin">
+                                                    <p>Account Origin reflects the manner in which an account was originated. Each account gets this label only once, when it first appears. There are Standard and Granular views of this.</p>
+                                                    <ul>
+                                                        <li value="1"><b>Standard Origin</b> (default): This encompasses accounts originating with one of the identifiable PriceTek Balance Flows (Acquisition or Switch In).</li>
+                                                        <li value="2">Choose the drop-down and either click the <b>Granular</b> radio button and toggle on or off Granular Origins such as: <ul><li value="1"><b>Customer Acquisition</b>, <b>Account Acquisition</b>, <b>Switch In:</b> These make up the "Standard Origin"&#160;category and reflect accounts originating in these ways.</li><li value="2"><b>Legacy:</b> Legacy captures the accounts that were present in the first month of data loaded into PriceTek, where we cannot view one period prior to associate any with being new, how, etc. Legacy captures these balances that existed at the start of the dataset.</li></ul></li>
+                                                        <li value="3">Depending on your institution's configuration, there may be other <b>Account Origins </b>present to analyze (for example, accounts originated in a specific time period through a peer bank acquisition).</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_UpdateView">
+                                                    <p>Click <b>Update View</b> to display the chart and table after you have made your Chart Format selections (e.g., <b>Metric</b>, <b>Group By</b>).</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_HideVin">
+                                                    <p>Click the <b>Hide Model Exclusions</b> checkbox to prevent any acknowledged outliers from being displayed in the data (set up per institution).</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_GroupInsign">
+                                                    <p>The <b>Group Insignificant Items</b> checkbox aggregates insignificant items in the chart and table to a single <b>Other</b> bucket, to keep the output cleaner and easier to read in situations with multiple but insignificant data elements in the <b>Group By</b> selection.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_Hover">
+                                                    <p>Hover over a line or column to display the metrics displayed in the table view.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_Table">
+                                                    <p>Click the <b>Table Tab</b> to display the hover-over metrics from the chart in a table.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_Customers">
+                                                    <p>Choose either:</p>
+                                                    <ul>
+                                                        <li value="1"><b>All</b> (default): All customers include both retained and attrited.</li>
+                                                        <li value="2"><b>Retained Customers Only</b>: Those customers that retained at least one deposit account across the selected date range.</li>
+                                                        <li value="3"><b>Attrited Customers Only</b>: Those customers that closed all accounts by the end of the selected date range.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="imageMapPop" id="VDC_Legend">
+                                                    <p>The legend is interactive and any bar item can be clicked  to remove or add  back to the visualization.</p>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="CommonUseCases" href="#CommonUseCases">Common Use Cases for this Module</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>&#160;</p>
+                                                        <ul>
+                                                            <li value="1">Monitor whether or not promotional campaigns are effectively bringing in customers that grow their relationship with the bank.</li>
+                                                            <li value="2">Track the effectiveness of product fencing.</li>
+                                                            <li value="3">Develop a better understanding of the holistic customer relationship.</li>
+                                                            <li value="4">Generate a customer level dataset that can be leveraged for new custom reports.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="HowdoIusethisModule" href="#HowdoIusethisModule">How do I use this Module?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>&#160;</p>
+                                                        <p>The <b>Vintage Customer Drill-down </b>module displays data for all accounts a customer has with the bank, based on filter selections that identify a customer pool to analyze. </p>
+                                                        <p>For example, selecting "Vintage 201701, Product Group Money Market"&#160;in the filters will set the analysis to be <u>any customer</u> that opened a Money Market account in 201701. Dimension selections narrow down to accounts of interest, and the module displays customer data for customers associated with those accounts.</p>
+                                                        <table class="AutoNumber_p_NumberedList_Restart_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Restart_1" valign="top"><span>1. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Restart_1" valign="top" data-mc-autonum="1. &#160;&#160;">Access the <b>Vintage Data</b> section (choose <b>Customer Drilldown</b>), and use the multi-select <b>Data Filters </b>on the left side to narrow down your institution's unique portfolio segmentation (i.e., Product Group, Term Bucket, etc.).</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>The default starting selections are <b>All </b>for all Segmentation Filters. This will define what accounts determine the customer pool to analyze.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>2. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="2. &#160;&#160;"><i>Choose whether to isolate accounts based on when they opened, or when they existed at a point in time:</i> Use the <b>Filter By</b> drop-down, choose <b>Existed On Date</b> to isolate customers based on accounts they had at a given time period.  </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>Choose Vintages to isolate customers based on accounts they opened in a given time period range. If you choose <b>Existed On Date</b>, then the <b>Earliest Vintage</b> and <b>Latest Vintage</b> date fields are replaced by a single <b>Existed on Date</b> drop-down. </p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>3. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="3. &#160;&#160;">Click the <b>Vintage Type </b>drop-down and choose between <b>Standard Vintages</b>, <b>Legacy vintages </b>(if applicable), or vintage data sets affected by bank acquisitions. </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>This drop-down is institution-specific. For more details, refer to the <a href="VintageDataMethodology.htm#Understanding_Account_Origin"><b>Understanding Account Origin</b> subheader on the <b>Vintage Data Methodology</b> page</a>.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>4. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="4. &#160;&#160;">Enter the <b>Earliest Vintage</b> and <b>Latest Vintage</b> dates to set the upper and lower data bounds (not applicable for <b>Existed On Date</b> views). </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>This isolates the Vintages to be included in data output.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>5. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="5. &#160;&#160;">Enter the <b>Start Date</b> and <b>End Date</b> you want to isolate the months of data included in the analysis.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>These fields are not applicable to both <b>Percent Balances Remaining</b> and <b>Percent Accounts Remaining</b> metrics.</p>
+                                                        <p class="NoteIndent"><b>Note</b>: You must click <img src="../Resources/Images/Update View button.jpg" /> to apply changes.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>6. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="6. &#160;&#160;">Select a metric and relevant choices to display, aggregate, and/or group the output using the applicable Chart Format drop-downs - <b>Metric</b>, <b>X-Axis Value</b>, <b>Group By</b>, <b>Metric Aggregation</b>, <b>Customers</b>, and <b>Account Origin</b>.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>This organizes your data for different views - and each view tells a different story.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>7. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="7. &#160;&#160;">When you are ready, click <img src="../Resources/Images/Update View button.jpg" />.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <h3 style="margin-top: 16px;">Nuances to this module</h3>
+                                                        <ul>
+                                                            <li value="1">Use the <b>Hide Model Exclusions </b>and <b>Group Insignificant Items </b> checkboxes to remove outliers and group items for better clarity.  Hover over these drop-down in the above screenshot for full details. <b>Note</b>: If the box(es) are grayed out, they are not relevant to the Chart Format items  you selected. </li>
+                                                            <li value="2">From the <b>Legend</b> on the right side of the page, toggle on and off any of the metrics displayed.  Click <b>All</b> to display all or <b>None</b> to turn off all of the metrics (and then turn back on one at a time).</li>
+                                                            <li value="3">Toggle between the <b>Value </b>and <b>Percent </b>radio buttons.</li>
+                                                            <li value="4">Click the <b>Table </b>tab to view the underlying data.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="MethodologyandDefinitions" href="#MethodologyandDefinitions">Methodology and Definitions</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+                                                            <table style="width: 100%;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">
+                                                                <col style="width: 22px;" />
+                                                                <col style="width: 171px;" />
+                                                                <col />
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;"><b class="Tableheader">Methodology</b>
+                                                                        </td>
+                                                                        <td style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" colspan="2">Refer to the <a href="VintageDataMethodology.htm" class="MCXref xref">Vintage Data Methodology</a> for details.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td colspan="2" style="background-color: #bdf1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;"><b style="font-family: 'Century Gothic'; font-size: 14pt;">Data Dictionary</b>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Vintage</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">The date an account first appears in the data history, assigned monthly.
+</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Account Origin</td>
+                                                                        <td style="background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">The manner in which an account has originated. Each account gets this label only once, when it first appears.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Vintage Exclusions</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Specific accounts may be excluded from the analysis due to non-customer activity, outlier behavior or other data anomalies. Vintage exclusions are unique to the Vintages module, and can be hidden with the visible checkboxes.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Vintage Range</td>
+                                                                        <td style="background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Represented in PriceTek with <b>Earliest / Latest Vintage</b>. This isolates the Vintages to be included in data output. Typically, Legacy and Bank Acquisition origins will only map to a single Vintage</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Date Range</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Represented in PriceTek with <b>Start Date / End Date</b>. This isolates the months of data is included in the analysis. This differs from the Vintage Range. For example, one could analyze “accounts that originated in January 2013” (January ‘13 Vintage Range) across the full year 2013 (Date Range).</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Months Out</td>
+                                                                        <td style="background-color: #d9f1ff;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;">Represents the number of months since account origination.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="TipsTricksFAQs" href="#TipsTricksFAQs">Tips, Tricks, &amp; FAQs</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                            <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <col style="width: 220px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b class="Tableheader">Tips &amp; Tricks</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                        <img src="../Resources/Images/ChartTable_188x30.jpg" style="border-left-style: solid;border-left-width: 1pt;border-left-color: ;border-right-style: solid;border-right-width: 1pt;border-right-color: ;border-top-style: solid;border-top-width: 1pt;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: ;width: 188;height: 30;" />
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Click the <b>Table Tab</b> to display the hover-over metrics from the chart in a table format.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b style="font-family: 'Century Gothic';">FAQs</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b>Why do I see months prior to my vintage month w/data in Customer Drilldown but not in Vintage Data Summary?</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b>Customer Drilldown</b> displays the full customer deposit portfolio based on a specific vintage selection. Customers in your vintage selection could potentially have had accounts and balances prior to the month if <b>Account Acquisition</b> or <b>Switch In</b> is selected in <b>Account Origin</b>. <b>Vintage Data Summary</b> only displays the balances and accounts associated with your <i>vintage</i> selection, therefore there should not be data <i>prior</i> to your <b>Start Vintage Date</b>.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <h2>Related Topics</h2>
+                                                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                    <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                    <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="VintageDataMethodology.htm" class="MCXref xref">Vintage Data Methodology</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="VintageDataSummary.htm" class="MCXref xref">Vintage Data Summary</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>&#160;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" src="../Resources/qtip2/jquery.qtip.js">
+                                    </script>
+                                    <script type="text/javascript" src="../Resources/hovermap/hovermap.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

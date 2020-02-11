@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5Top" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Bank Data">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Balance Flows</title>
+        <link href="../Resources/Images/swoosh.ico" rel="icon" type="image/x-icon" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/ExpandAllIC2.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/Collapse2.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/Gold bar and row table.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="small" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our help and documentation" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="topic-layout">
+                                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                                <div class="button-group-container-left">
+                                                    <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                        <img alt="Expand all" src="../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Balance Flows</h1>
+                                                <p>The <b>Balance Flows </b>module allows you to analyze flow-level data and identify potential problems such as low acquisition or high attrition, as well as quantify the difference in augmentation balances between current customers that switch products and new money to your institution.</p>
+                                                <p><b style="font-style: italic;">Hover your mouse over the screenshot below to display pop-up content detailing sections of the screen:</b>
+                                                </p>
+                                                <p>Be sure to review the <a href="../Intro/HowToUseAnalyticModules.htm" class="MCXref xref">How To Use Analytic Modules</a> topic for contextual hover over help that applies to the <b>Balance Flows</b>module.</p>
+                                                <div class="hoverMap" id="BalanceFlows">
+                                                    <img src="../Resources/Images/BDA_Balance_Flows_1177x593.jpg" id="hoverImage" class="mapImage" style="border-left-style: solid;border-left-width: 1pt;border-left-color: ;border-right-style: solid;border-right-width: 1pt;border-right-color: ;border-top-style: solid;border-top-width: 1pt;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1pt;border-bottom-color: ;width: 1177;height: 593;" />
+                                                    <div class="overlay">
+                                                    </div><a class="mapLink hoverImage" id="BalanceFlows_1" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_DateRange">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_2" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_Metric">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_3" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_XAxis">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_4" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_GroupBy">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_5" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_MetricAgg">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_6" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_TableTab">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_7" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_HideModel">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_8" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_GroupSigItems">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_10" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_ValuePercent">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_11" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_BalanceFlows">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_12" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_ResetAxes">Hover over for a description.</a><a class="mapLink hoverImage" id="BalanceFlows_13" data-position.adjust.x="5" data-position.adjust.y="5" title="" href="#BF_UpdateView">Hover over for a description.</a>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_DateRange">
+                                                    <p>Enter the <b>Dataset </b>(e.g., Monthly, Weekly), as well as the <b>Start Date</b> and <b>End Date</b> you want to test.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_Metric">
+                                                    <p>Choose the metric value to be displayed up the Y-Axis (refer to the <b>Methodology and Definitions </b>table below for details).</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_XAxis">
+                                                    <p>Choose either <b>Time </b>(i.e., each period within the selected date range and frequency) or the institutional data segment (e.g.,  Pricing Market).</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_GroupBy">
+                                                    <p>Choose how to segment the data up the vertical Y-axis (e.g., choose <b>Product Group </b>to segment data by <b>Checking</b>, <b>Savings</b>, <b>CD</b>, <b>Money Market</b>, etc). Choose <b>None </b>to combine all data into one value. </p>
+                                                    <p class="Note"><b>Note</b>: Each segmentation is displayed in the <b>Chart </b>legend and metric details are displayed on the <b>Table </b>tab.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_MetricAgg">
+                                                    <p>Choose how data is summarized. Available options:</p>
+                                                    <p><b>Sum</b>: The only option available when viewing data with <b>Time</b> on the X-Axis. Represents the metric's actual value for each date shown.</p>
+                                                    <p><b>Monthly Average</b> The straight average of the selected metric over the total number of months between the start date and end date.</p>
+                                                    <p><b>Average Over Observations</b>: The straight average of the selected metric over its total number of occurrences in the data.</p>
+                                                    <p><b>Weighted Average</b>: This applies to calculated values. The aggregate value is a calculated as a balance weighted average across months.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_TableTab">
+                                                    <p>Click the <b>Table Tab</b> to display the hover-over metrics from the chart in a table. </p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_HideModel">
+                                                    <p>Click the <b>Hide Model Exclusions</b> checkbox to prevent any acknowledged outliers from being displayed in the data (set up per institution).</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_GroupSigItems">
+                                                    <p>The <b>Group Insignificant Items</b> checkbox aggregates insignificant items int he chart and table to a single <b>Other </b>bucket, to keep the output cleaner and easier to read in situations with multiple but insignificant data elements in the <b>Group By </b>selection.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_ValuePercent">
+                                                    <p>Click the <b>Percent</b> radio button to display the Y Axis metric  as a percentage of 100.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_BalanceFlows">
+                                                    <p>From the Chart key, toggle on or off any of the metrics displayed. Click <b>All </b>to display all or <b>None </b>to turn off all of the metrics.  </p>
+                                                    <p>Refer to the <b>Methodology and Definitions </b>table below for details.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_ResetAxes">
+                                                    <p>Hover over a column to display the metrics displayed in the table.</p>
+                                                </div>
+                                                <div class="imageMapPop" id="BF_UpdateView">
+                                                    <p>Click <b>Update View</b> to display the chart and table after you have made your Chart Format selections (e.g., <b>Metric</b>, <b>X-Axis Value</b>, <b>Group By </b>and <b>Metric Aggregation</b>).</p>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="CommonUseCases" href="#CommonUseCases">Common Use Cases for this Module</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>&#160;</p>
+                                                        <p>This screen is intended to answer strategic questions like:</p>
+                                                        <ul>
+                                                            <li value="1">Has acquisition growth slowed or expanded recently? What seasonal effects should be considered?</li>
+                                                            <li value="2">Are attrition rates particularly high in any markets or products?</li>
+                                                            <li value="3">What percentage of augmented balances for a product are current customers switching money in rather than new customers with new money?</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="HowdoIusethisModule" href="#HowdoIusethisModule">How do I use this Module?</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>&#160;</p>
+                                                        <p>Use the <b>Balance Flows </b>module to analyze trends in stock balance data across a variety of segmentations. Track recent balance movements and identify potential problems, such as a shift in product mix or a decline in a particular market.</p>
+                                                        <table class="AutoNumber_p_NumberedList_Restart_1" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Restart_1" valign="top"><span>1. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Restart_1" valign="top" data-mc-autonum="1. &#160;&#160;">Access the <b>Bank Data</b> section (choose <b>Balance Flows</b>), and use the multi-select <b>Data Filters </b>on the left side to narrow down your institution's unique portfolio segmentation (i.e., Product Group, Term Bucket, etc.).</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>The default starting selections are <b>All </b>for all Segmentation Filters.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>2. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="2. &#160;&#160;">Choose the <b>Dataset </b>(<b>Monthly </b>or <b>Week over Week</b>) and enter the <b>Start Date</b> and <b>End Date</b> you want to test.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NoteIndent"><b>Note</b>: You must click <img src="../Resources/Images/Update View button.jpg" /> to apply changes.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>3. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="3. &#160;&#160;">Select a metric and relevant choices to display, aggregate, and/or group the output using the applicable Chart Format drop-downs - <b>Metric</b>, <b>X-Axis Value</b>, <b>Group By </b>, and <b>Metric Aggregation</b>.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="NumberedList_Indent_NoNumber" data-mc-autonum=" "><span class="autonumber"><span> </span></span>This organizes your data for different views - and each view tells a different story.</p>
+                                                        <table class="AutoNumber_p_NumberedList" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                                                            <col style="width: -25.33333px;" />
+                                                            <col style="width: 25.33333px;" />
+                                                            <col style="width: auto;" />
+                                                            <tr>
+                                                                <td valign="top" />
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top"><span>4. &#160;&#160;</span>
+                                                                </td>
+                                                                <td class="AutoNumber_p_NumberedList_Alpha_first" valign="top" data-mc-autonum="4. &#160;&#160;">When you are ready, click <img src="../Resources/Images/Update View button.jpg" />.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <h3 style="margin-top: 16px;">Nuances to this module</h3>
+                                                        <ul>
+                                                            <li value="1">Use the <b>Hide Model Exclusions </b>and <b>Group Insignificant Items </b> checkboxes to remove outliers and group items for better clarity.  Hover over these drop-down in the above screenshot for full details.</li>
+                                                            <li value="2">From the <b>Legend</b> on the right side of the page, toggle on and off any of the metrics displayed.  Click <b>All</b> to display all or <b>None</b> to turn off all of the metrics (and then turn back on one at a time).</li>
+                                                            <li value="3">Toggle between the <b>Value </b>and <b>Percent </b>radio buttons.</li>
+                                                            <li value="4">Click the <b>Table </b>tab to view the underlying data.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="MethodologyandDefinitions" href="#MethodologyandDefinitions">Methodology and Definitions</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>
+                                                            <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                                <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                                <col style="width: 171px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                                <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                                <tbody>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b class="Tableheader">Methodology</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Refer to the <a href="BankDataMethodology.htm" class="MCXref xref">Bank Data Methodology</a> content page for details.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b style="font-family: 'Century Gothic'; font-size: 14pt;">Definitions</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Balances</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">This metric displays the total end of period balance $ amount of the selected portfolio dimensions or filters.  </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Accounts</td>
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">
+                                                                            <p> This metric displays the total accounts of the selected portfolio dimensions. </p>
+                                                                            <p class="Note"><b>Note</b>: When grouping by certain dimensions, there is the possibility of a single account appearing twice (e.g., an account may have <b>Switched Out </b>balances to two destinations. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Accts/Branch</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1"> This metric displays the average number of accounts in each branch for the selected portfolio dimensions.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Average Bals/Acct</td>
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">This metric displays the average total balance $ amount in each account. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Bals/Branch</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">This metric displays the average total balance $&#160;amount per branch. Effectively total balances divided by the number of branches they are sourced from based on active Segmentation Filters. </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Rate and Accts</td>
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">
+                                                                            <p>The weighted average offered interest rate within the selected portfolio dimensions. The total number of accounts will be reflected across the <b>Group By </b>dimension as a bar chart, and the overall weighted rate will be overlaid as a line chart. </p>
+                                                                            <p>Click the <b>Table </b>tab to display both metrics in a table.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Rate and Bals</td>
+                                                                        <td style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">
+                                                                            <p>This metric displays the average offered weighted interest rate. The balance values will be reflected across the <b>Group </b>By dimension as a bar chart, and the overall weighted rate will be overlaid as a line chart. </p>
+                                                                            <p>Click the <b>Table </b>radio button to display both metrics in a table.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">&#160;</td>
+                                                                        <td style="font-weight: bold;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1">Weighted Rate</td>
+                                                                        <td style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;" class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1">This metric displays the average weighted rate as a line graph. The <b>Weighted Rate </b>measures the annual rate of the accounts as of the period end date and is not calculated based on interest dollars <i>paid</i>.
+
+</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b>Acquisition</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                            <p>Balances in new accounts, where existing accounts in other products were not diminished by the starting balance of the new account. </p>
+                                                                            <p class="Note"><b>Note</b>: Accounts are generally considered new when balances in the account/product/term in month one are &lt;=0, and balances in month two are &gt;0. For checking accounts we rely on the open date and the appearance of the account in the data to determine whether an account is new.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b>Switch In (Switch)</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">Balances in new accounts that were funded directly from one other or multiple other of the customer’s accounts.</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><b>Switch In (Augmentation)</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                            <p>Augmented balances that are new to the bank in new accounts that were partially funded from one other or multiple other of the customer’s accounts.</p>
+                                                                            <p class="Note"><b>Note</b>: Switch In can also occur on an account whose product group, product name, or term changes from month to month.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b>Change to Existing</b>
+                                                                        </td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">
+                                                                            <p>Net augmentation/diminishment for existing accounts.</p>
+                                                                            <p class="Note"><b>Note</b>: Existing accounts are generally those accounts that exist with positive balances from one month to the next, and do not change customer ID, account ID, product, term, or line of business. For checking products, an account is treated as an existing account even if the balance is reduced to zero, as long as the account appears in the data and does not have a populated close date.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;font-weight: bold;">Switch Out (Switch)</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                            <p>Balances in accounts that have a balance in one month, and in the next month that balance diminishes or attrites and is reflected in the balance of a new account for the same customer.</p>
+                                                                            <p class="Note"><b>Note</b>: Generally, when balances in the account/product/term in month one are &gt;0, and balances in month two are &lt;=0, that account is considered closed. For checking accounts we rely on the close date and the appearance of the account in the data to determine whether an account has closed.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="font-weight: bold;background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">Switch Out (Diminishment)</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #d9f1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">
+                                                                            <p>Within accounts that funded another of that customer’s new accounts, the portion of balances that did not appear in the new account, and presumably left the bank.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;font-weight: bold;">Attrition</td>
+                                                                        <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Either customers leaving the bank all together, or accounts closing where no new account is opened with some or all of the funds.</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" /></a><a class="purple-header" name="TipsTricksFAQs" href="#TipsTricksFAQs">Tips, Tricks, &amp; FAQs</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                            <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <col style="width: 270px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                            <tbody>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b class="Tableheader">Tips &amp; Tricks</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Grab a portion of the Total Balances chart to display a smaller date range</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">Using your mouse, drag across the area of the visualization for which you want to drill down deeper and view a smaller data segment - in this case, a shorter date range.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                        <img src="../Resources/Images/Reset Axes.jpg" style="border-left-style: solid;border-left-width: 1px;border-left-color: ;border-right-style: solid;border-right-width: 1px;border-right-color: ;border-top-style: solid;border-top-width: 1px;border-top-color: ;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: ;" />
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">If you have clicked and dragged the visualization to drill down to a select range - click <b>Reset Axes</b> to expand back out to the original chart view.</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;"><b style="font-family: 'Century Gothic';">FAQs</b>
+                                                                    </td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="background-color: #bdf1ff;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;border-bottom-color: #018eb2;">&#160;</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">to be added as needed</td>
+                                                                    <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="font-family: Calibri;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <p>&#160;</p>
+                                                <h2>Related Topics</h2>
+                                                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Gold bar and row table.css');border-top-left-radius: 0px;border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;" class="TableStyle-Gold_bar_and_row_table" cellspacing="0">
+                                                    <col style="width: 22px;" class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                    <col class="TableStyle-Gold_bar_and_row_table-Column-Column1" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1" />
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="BankDataMethodology.htm" class="MCXref xref">Bank Data Methodology</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="TotalBalances.htm" class="MCXref xref">Total Balances</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="BalanceWaterfall.htm" class="MCXref xref">Balance Waterfall</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="SwitchBalances.htm" class="MCXref xref">Switch Balances</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" colspan="2" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="MaturingBalances.htm" class="MCXref xref">Maturing Balances</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyE-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyD-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="HistoricRollRates.htm" class="MCXref xref">Historic Roll Rates</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-Gold_bar_and_row_table-Body-Body1">
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyB-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;">&#160;</td>
+                                                            <td class="TableStyle-Gold_bar_and_row_table-BodyA-Column1-Body1" style="border-left-style: solid;border-left-width: 0px;border-right-style: solid;border-right-width: 0px;border-top-style: solid;border-top-width: 0px;border-bottom-style: solid;border-bottom-width: 0px;padding-left: 3px;padding-top: 3px;padding-bottom: 3px;"><a href="BankDataAnalytics.htm" class="MCXref xref">BD:&#160;Custom Analytics</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>&#160;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript" src="../Resources/qtip2/jquery.qtip.js">
+                                    </script>
+                                    <script type="text/javascript" src="../Resources/hovermap/hovermap.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

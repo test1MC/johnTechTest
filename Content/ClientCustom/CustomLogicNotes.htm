@@ -155,24 +155,30 @@
                                             <div role="main" id="mc-main-content">
                                                 <h1>Custom Logic Notes</h1>
                                                 <p>&#160;</p>
-                                                <table style="width: 100%; table-layout: fixed;" data-mc-conditions="General.AIB">
+                                                <table style="width: 100%; table-layout: fixed;" data-mc-conditions="General.DemoBank">
+                                                    <col style="width: 50%;" />
                                                     <col style="width: 50%;" />
                                                     <tbody>
                                                         <tr>
-                                                            <td style="font-weight: bold;background-color: #bdf1ff;text-align: center;font-family: 'Century Gothic';padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;" colspan="2">Allied Irish Banks<br />Custom Logic Notes</td>
+                                                            <td style="font-weight: bold;background-color: #bdf1ff;text-align: center;font-family: 'Century Gothic';padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;" colspan="2">Demobank<br />Custom Logic Notes</td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;" colspan="2">
+                                                            <td style="padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;">
                                                                 <p>
                                                                     <ul>
-                                                                        <li value="1">When a term product matures into an O/N holding product, this behavior does not trigger a switch</li>
+                                                                        <li value="1">Negative balance accounts are considered "open"&#160;but are overwritten to have a value of $0.01 to remain in the dataset, which may cause some discrepancies with internal reporting at the bank</li>
                                                                     </ul>
                                                                 </p>
+                                                            </td>
+                                                            <td style="padding-left: 3px;padding-right: 3px;padding-top: 3px;padding-bottom: 3px;">
+                                                                <ul>
+                                                                    <li value="1">Some Consumer product balances may show up in the "Small Business"&#160;Line of Business - this is due to their branch assignment. Any accounts associated with a "Business"&#160;branch will be mapped to the "Small&#160;Business"&#160;LOB, regardless of product</li>
+                                                                </ul>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                                <p data-mc-conditions="General.AIB">&#160;</p>
+                                                <p data-mc-conditions="General.DemoBank">&#160;</p>
                                                 <p>If there are no custom logic notes displayed above, please reach out to your <b>Client Services team </b>, or email your request to <a href="mailto:pricetek_support@novantas.com">pricetek_support@novantas.com</a>.</p>
                                                 <p>&#160;</p>
                                                 <h2>Related Metrics for your Institution</h2>

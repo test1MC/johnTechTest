@@ -155,12 +155,12 @@
                                             <div role="main" id="mc-main-content">
                                                 <h1>Open vs Closed Account Rules</h1>
                                                 <p>&#160;</p>
-                                                <table style="width: 100%; table-layout: fixed;" data-mc-conditions="General.AIB">
+                                                <table style="width: 100%; table-layout: fixed;" data-mc-conditions="General.DemoBank">
                                                     <col style="width: 25%;" />
                                                     <col style="width: 75%;" />
                                                     <tbody>
                                                         <tr>
-                                                            <td style="font-weight: bold;background-color: #bdf1ff;text-align: center;font-family: 'Century Gothic';" colspan="2">&#160; Allied Irish<br />Open vs Closed Account Rules</td>
+                                                            <td style="font-weight: bold;background-color: #bdf1ff;text-align: center;font-family: 'Century Gothic';" colspan="2">&#160; Demobank <br />Open vs Closed Account Rules</td>
                                                         </tr>
                                                         <tr>
                                                             <td style="font-weight: bold;background-color: #bdf1ff;text-align: left;font-family: 'Century Gothic';">Product Group</td>
@@ -168,21 +168,41 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <p><b>All Product Groups</b>
+                                                                <p><b>Non-Interest Checking</b>
+                                                                </p>
+                                                                <p><b>Interest Checking</b>
                                                                 </p>
                                                             </td>
                                                             <td>
                                                                 <ul>
                                                                     <li value="1"><b>Existence in data</b>: Account number exists in account data file, <i>regardless of balance level</i>.
 </li>
-                                                                    <li value="2"><b>Date close identifier</b>: if an account’s date close is Null, it will be identified as open (can also use account status code as identifier if requested).
+                                                                    <li value="2"><b>Date close identifier</b>: If an account’s date close is <b>Null</b>, it will be identified as open (can also use account status code as identifier if requested).
+</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="background-color: #d9f1ff;">
+                                                                <p><b>Savings</b>
+                                                                </p>
+                                                                <p><b>Money Market</b>
+                                                                </p>
+                                                                <p><b>CD</b>
+                                                                </p>
+                                                            </td>
+                                                            <td style="background-color: #d9f1ff;">
+                                                                <ul>
+                                                                    <li value="1"><b>Existence in data</b>: Account number exists in account data file.
+</li>
+                                                                    <li value="2"><b>Balance Level</b>: Account number exists <i>with a positive balance</i>.
 </li>
                                                                 </ul>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                                <p data-mc-conditions="General.AIB">&#160;</p>
+                                                <p data-mc-conditions="General.DemoBank">&#160;</p>
                                                 <p>If no rules are listed here for your institution, please reach out to your <b>Client Services team </b>, or email your request to <a href="mailto:pricetek_support@novantas.com">pricetek_support@novantas.com</a>.</p>
                                                 <p>&#160;</p>
                                                 <h2>Related Metrics for your Institution</h2>
